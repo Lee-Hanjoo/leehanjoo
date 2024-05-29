@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import './css/reset.css';
 import './css/style.css';
@@ -15,6 +14,7 @@ function App() {
                         <img src="./img/star.svg" alt="" />
                     </li>
                     <li>
+                        1234
                         <img src="./img/star.svg" alt="" />
                     </li>
                 </ul>
@@ -30,6 +30,8 @@ function App() {
                     <li>H</li>
                     <li>J</li>
                 </ul>
+            </div>
+            <div class="container">
             </div>
         </main>
     );
