@@ -1,7 +1,11 @@
-export default function Box() {
+const props = {
+  size: String
+}
+
+export default function Box(props) {
+  const {size} = props
     return (
-      <div>
-        <h1>box</h1>
+      <div className={`box ${size}`}>
       </div>
     );
   }
