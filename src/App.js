@@ -1,6 +1,7 @@
 import './App.css';
 import './css/reset.css';
 import './css/style.css';
+import Box from './component/Box.js'
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                 </ul>
             </div>
             <div class="container">
+                <Box size={1234}></Box>
             </div>
         </main>
     );
