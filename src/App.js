@@ -2,10 +2,17 @@ import './App.css';
 import './css/reset.css';
 import './css/style.css';
 import Box from './component/Box.js'
+import BoxContents from './component/BoxContents.js'
 
 function App() {
     return (
         <main>
+            <div className="contact_menu">
+                <a href="">
+                    <span>Thx.</span>
+                    <p>Contact Me</p>
+                </a>
+            </div>
             <div className='visual'>
                 <h1 className="logo">
                     <img src="./img/logo.png" alt="" />
@@ -18,7 +25,6 @@ function App() {
                         <img src="./img/star.svg" alt="" />
                     </li>
                     <li>
-                        1234
                         <img src="./img/star.svg" alt="" />
                     </li>
                 </ul>
@@ -36,10 +42,34 @@ function App() {
                 </ul>
             </div>
             <div className="container">
-                <Box size='medium'
-                lt='Publishing'
-                rtImg='./img/icon/just_l.svg'>
-                </Box>
+                <div className="navi">
+                    <Box size='medium' color='pink' height="590" title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH">
+                        <BoxContents
+                        lt='Publishing'
+                        lb="See my project"
+                        rtIcon="./img/icon/just_l.svg" />
+                    </Box>
+                    <div className="box_wrap">
+                        <Box size="small" color="white" height="290">
+                            <BoxContents 
+                            lb="React"
+                            rbIcon="./img/icon/react.svg"
+                            />
+                        </Box>
+                        <Box size="small" color="black" height="290">
+                            <BoxContents 
+                            lb="Design"
+                            rbIcon="./img/icon/design.svg"
+                            />
+                        </Box>
+                        <Box size="medium" color="cyan" height="290">
+                            <BoxContents 
+                            lb="Contact Me"
+                            rbIcon="./img/icon/contact.svg"
+                            />
+                        </Box>
+                    </div>
+                </div>
             </div>
         </main>
     );
