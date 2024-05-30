@@ -7,11 +7,14 @@ function App() {
     return (
         <main>
             <div className='visual'>
-                <ul class="star">
+                <h1 className="logo">
+                    <img src="./img/logo.png" alt="" />
+                </h1>
+                <ul className="star">
                     <li>
                         <img src="./img/star.svg" alt="" />
                     </li>
-                    <li class="on">
+                    <li className="on">
                         <img src="./img/star.svg" alt="" />
                     </li>
                     <li>
@@ -19,21 +22,24 @@ function App() {
                         <img src="./img/star.svg" alt="" />
                     </li>
                 </ul>
-                <ul class="txt lang">
+                <ul className="txt lang">
                     <li>Html5 Css3</li>
                     <li>Javascript</li>
                     <li>React</li>
                 </ul>
-                <p class="txt portfolio">Lee Han joo Portfolio</p>
-                <p class="txt dev">Front-end.Dev</p>
-                <ul class="txt name">
+                <p className="txt portfolio">Lee Han joo Portfolio</p>
+                <p className="txt dev">Front-end.Dev</p>
+                <ul className="txt name">
                     <li>L</li>
                     <li>H</li>
                     <li>J</li>
                 </ul>
             </div>
-            <div class="container">
-                <Box size={1234}></Box>
+            <div className="container">
+                <Box size='medium'
+                lt='Publishing'
+                rtImg='./img/icon/just_l.svg'>
+                </Box>
             </div>
         </main>
     );
