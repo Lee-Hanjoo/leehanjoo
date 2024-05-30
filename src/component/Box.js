@@ -1,13 +1,11 @@
 export default function Box(props) {
-  const {size, children, lt, rt, rtImg, lb, lbImg, rb} = props
+  const {size, children, title, color, height } = props
     return (
-      <div className={`box ${size}`}>
-        <div className={`${lt ? 'lt' : ''}`}>{lt}</div>
-        <div className={`${rt ? 'rt' : ''}`}>
-          { rtImg ? <img src={rtImg} alt="" /> : rt}
-        </div>
-        
+      <div className={`box ${size ? size : ''} ${color}`} style={{height: height + 'px'}}>
         {children}
+        { title && 
+          <p className="title">{title}</p>
+        }
       </div>
     );
   }
