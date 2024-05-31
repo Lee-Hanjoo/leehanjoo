@@ -14,18 +14,16 @@ function App() {
                 </a>
             </div>
             <div className='visual'>
-                <h1 className="logo">
-                    <img src="./img/logo.png" alt="" />
-                </h1>
+                <h1 className="logo">한주</h1>
                 <ul className="star">
                     <li>
-                        <img src="./img/star.svg" alt="" />
+                        <img src="/assets/star.svg" alt="" />
                     </li>
                     <li className="on">
-                        <img src="./img/star.svg" alt="" />
+                        <img src="/assets/star.svg" alt="" />
                     </li>
                     <li>
-                        <img src="./img/star.svg" alt="" />
+                        <img src="/assets/star.svg" alt="" />
                     </li>
                 </ul>
                 <ul className="txt lang">
@@ -47,25 +45,25 @@ function App() {
                         <BoxContents
                         lt='Publishing'
                         lb="See my project"
-                        rtIcon="./img/icon/just_l.svg" />
+                        rtIcon="/assets/icon/just_l.svg" />
                     </Box>
                     <div className="box_wrap">
                         <Box size="small" color="white" height="290">
                             <BoxContents 
                             lb="React"
-                            rbIcon="./img/icon/react.svg"
+                            rbIcon="/assets/icon/react.svg"
                             />
                         </Box>
                         <Box size="small" color="black" height="290">
                             <BoxContents 
                             lb="Design"
-                            rbIcon="./img/icon/design.svg"
+                            rbIcon="/assets/icon/design.svg"
                             />
                         </Box>
                         <Box size="medium" color="cyan" height="290">
                             <BoxContents 
                             lb="Contact Me"
-                            rbIcon="./img/icon/contact.svg"
+                            rbIcon="/assets/icon/contact.svg"
                             />
                         </Box>
                     </div>

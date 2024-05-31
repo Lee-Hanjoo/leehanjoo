@@ -43,14 +43,12 @@ main {
     margin-bottom: 8px;
     position: relative;
     .logo {
+        font-family: "gugi";
+        font-size: 40px;
         position: absolute;
         left: 50%;
         bottom: 10px;
         transform: translateX(-50%);
-            img{
-                width: 100%;
-                height: 100%;
-            }
         }
     .txt {
         position: absolute;
@@ -119,6 +117,7 @@ main {
         border-radius: 80px;
         position: relative;
         overflow: hidden;
+        cursor: pointer;
         /* 박스의 크기 */
         &.small {
             width: calc(100% - (50% + 4px));
@@ -163,13 +162,27 @@ main {
         &.purple {
             background-color: #5500C1;
         }
+        &:hover {
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.1);
+                transition: all 3s;
+            }
+        }
         .title {
             display: flex;
             width: fit-content;
             justify-content: center;
             font-size: 110px;
             white-space: nowrap;
-            animation: rolling 8s linear infinite;
+            animation: rolling 16s linear infinite;
+            cursor:text;
         }
         .box_contents {
             .lt, .rt, .lb, .rb {
@@ -178,6 +191,7 @@ main {
             .lt > p, .rt > p, .lb > p, .rb > p {
                 font-size: 24px;
                 font-weight: 500;
+                cursor:text;
             }
             .lt {
                 left: 70px;
@@ -219,9 +233,9 @@ main {
 }
 @keyframes rolling {
     0% {
-        transform: translateX(0)
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-65.65%)
+        transform: translateX(-50.35%);
     }
 }
