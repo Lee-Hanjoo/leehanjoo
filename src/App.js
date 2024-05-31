@@ -3,6 +3,7 @@ import './css/reset.css';
 import './css/style.css';
 import Box from './component/Box.js'
 import BoxContents from './component/BoxContents.js'
+import CircleText from './component/CircleText.js'
 
 function App() {
     return (
@@ -44,7 +45,7 @@ function App() {
                     <Box size='medium' color='pink' height="590" title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH">
                         <BoxContents
                         lt='Publishing'
-                        lb="See my project"
+                        lb="Project"
                         rtIcon="/assets/icon/just_l.svg" />
                     </Box>
                     <div className="box_wrap">
@@ -67,6 +68,19 @@ function App() {
                             />
                         </Box>
                     </div>
+                </div>
+                <div className="project">
+                    <Box 
+                        size="large"
+                        color='black' 
+                        height="768" 
+                        title={`Through web Publishing works,\n You can check\n my design performance\n and how to write code.`}
+                    >
+                        <BoxContents 
+                        lt="WEB PROJECT"
+                        />
+                        <CircleText>Scroll to check my project</CircleText>
+                    </Box>
                 </div>
             </div>
         </main>

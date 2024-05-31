@@ -111,9 +111,18 @@ main {
 }
 
 .container {
+    > div {
+        padding: 4px 8px;
+        &:first-of-type {
+            padding-top: 8px;
+        }
+        &:last-of-type {
+            padding-bottom: 8px;
+        }
+    }
     .box {
+        padding: 50px 70px;
         display: flex;
-        align-items: center;
         border-radius: 80px;
         position: relative;
         overflow: hidden;
@@ -179,14 +188,15 @@ main {
             &::after {
                 opacity: 1;
             }
+            .box_contents{
+                .rt > img, .rb > img {
+                    animation: vibe 0.3s linear;
+                }
+            }
         }
         .title {
             display: flex;
-            width: fit-content;
-            justify-content: center;
             font-size: 110px;
-            white-space: nowrap;
-            animation: rolling 16s linear infinite;
             cursor:text;
             z-index: 10;
         }
@@ -217,15 +227,20 @@ main {
                 bottom: 50px;
             }
         }
+        p {
+            white-space: pre-line;
+        }
     }
 
-    /* section1 */
+    /* section1 - navi */
     .navi {
         display: flex;
-        padding: 8px;
         justify-content: space-between;
         > div {
             width: calc(50% - 4px);
+        }
+        .box {
+            align-items: center;
         }
         .box_wrap {
             display: flex;
@@ -236,13 +251,84 @@ main {
                 margin-left: 0;
             }
         }
+        .title {
+            width: fit-content;
+            justify-content: center;
+            white-space: nowrap;
+            animation: rolling 16s linear infinite;
+        }
+    }
+    /* section2 - project */
+    .project {
+        .box {
+            padding: 140px 70px 70px;
+        }
+        p {
+            color: #CCFF00;
+        }
+        .title {
+            font-weight: 200;
+        }
+    }
+    .circle_text {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: fit-content;
+        &::after{
+            content: '';
+            display: block;
+            width: 22px;
+            height: 20px;
+            background: url('../../public/assets/icon/circle_arrow.svg') no-repeat center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #circle_text {
+            height: 200px;
+            z-index: 10;
+            animation: rotate 10s linear infinite;
+            text {
+                font-size: 40px;
+                font-weight: bold;
+                text-transform: uppercase;
+                fill: #CCFF00;
+            }
+        }
     }
 }
+
+/* animation */
 @keyframes rolling {
     0% {
         transform: translateX(0);
     }
     100% {
         transform: translateX(-50.35%);
+    }
+}
+
+@keyframes vibe {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(-10deg);
+    }
+    66% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes rotate {
+    to {
+        transform: rotate(0);
+    }
+    from {
+        transform: rotate(360deg);
     }
 }
