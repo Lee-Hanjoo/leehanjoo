@@ -4,6 +4,8 @@ import './css/style.css';
 import Box from './component/Box.js'
 import BoxContents from './component/BoxContents.js'
 import CircleText from './component/CircleText.js'
+import WebProject from './component/WebProject.js'
+import WebButton from './component/WebButton.js'
 
 function App() {
     return (
@@ -77,9 +79,104 @@ function App() {
                         title={`Through web Publishing works,\n You can check\n my design performance\n and how to write code.`}
                     >
                         <BoxContents 
-                        lt="WEB PROJECT"
+                            lt="WEB PROJECT"
                         />
                         <CircleText>Scroll to check my project</CircleText>
+                    </Box>
+                    <Box
+                        size="regular"
+                        color="black"
+                        height="487"
+                    >
+                        <WebProject 
+                            sub="Web renewal"
+                            title="HanaTour"
+                            desc="하나투어 적응형 웹 사이트 리뉴얼"
+                            lang="Html5, Css3, jQuery, Ajax, Figma"
+                            webLink='https://www.naver.com'
+                            moLink='https://www.daum.net'
+                        />
+                    </Box>
+                    <Box
+                        size="regular"
+                        color="black"
+                        height="487"
+                    >
+                        <WebProject 
+                            sub="Web renewal"
+                            title="CBNUH"
+                            desc="충북대학교병원 반응형 웹 사이트 리뉴얼"
+                            lang="Html5, Css3, JS, jQuery, Plug-in, Figma"
+                            webLink='https://www.nate.com'
+                            tabLink='https://www.youtube.com'
+                            moLink='https://www.google.com'
+                        />
+                    </Box>
+                    <Box
+                        size="regular"
+                        color="black"
+                        height="487"
+                    >
+                        <WebProject 
+                            sub="Web renewal"
+                            title="MyPortfolio"
+                            desc="개인 포트폴리오 사이트"
+                            lang="Html5, Css3, React, JS, Figma"
+                            webLink='https://www.nate.com'
+                        />
+                    </Box>
+                </div>
+                <div className='pub'>
+                    <Box
+                        size="large"
+                        color="white"
+                        height="585"
+                    >
+                        <BoxContents
+                            lt='00.'
+                            lb='Working'
+                            rt='Publishing'
+                            rbIcon="/assets/icon/link_arrow_black.svg"
+                        />
+                            <div className='link_box'>
+                                <a href="https://sokorea.or.kr/" title="SOK" target='_blank'>SOK</a>
+                                <a href="https://birkmankorea.co.kr/" title="Birkman" target='_blank'>Birkman</a>
+                                <a href="https://icomes.or.kr/" title="ICOMES2024" target='_blank'>ICOMES2024</a>
+                                <a href="http://www.salesmac.com/employee/login" title="새날 CRM" target='_blank'>새날 CRM</a>
+                                <a href="https://cedulearn.com/" title="쎄듀런" target='_blank'>쎄듀런</a>
+                                <a href="http://teamhubdnc.com/" title="팀 허브디앤씨" target='_blank'>팀 허브디앤씨</a>
+                                <a href="https://www.mirapartners.im/" title="미라 파트너스" target='_blank'>미라 파트너스</a>
+                                <a href="https://labex.kr/goods/goods_list.php" title="Labex" target='_blank'>Labex</a>
+                                <a href="" title="바디채널">바디채널 관리자</a>
+                            </div>
+                    </Box>
+                </div>
+                <div className='design'>
+                    <Box
+                        size='medium'
+                        color='sky'
+                        height='385'
+                    >
+                        <BoxContents 
+                            lt='01.'
+                            lb='HANSSEM'
+                            rt='Design'
+                            rbIcon="/assets/icon/link_arrow_white.svg"
+                        />
+                        <img className="logo_img" src='/assets/icon/hanssem.svg' alt="hanssem logo"/>
+                    </Box>
+                    <Box
+                        size='medium'
+                        color='brown'
+                        height='385'
+                    >
+                        <BoxContents 
+                            lt='02.'
+                            lb='BYHEYDEY'
+                            rt='Design'
+                            rbIcon="/assets/icon/link_arrow_white.svg"
+                        />
+                        <img className="logo_img" src='/assets/icon/byheydey.svg' alt="byheydey logo"/>
                     </Box>
                 </div>
             </div>

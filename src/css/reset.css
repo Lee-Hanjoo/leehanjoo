@@ -52,7 +52,10 @@ table {
 border-collapse: collapse;
 border-spacing: 0;
 }
-
+button, input[type="button"] {padding:0;margin:0;border:none;vertical-align:middle;cursor:pointer;background:transparent;}
+input, select, button, textarea{outline: none; -moz-appearance: none; -webkit-appearance: none;}
+button:focus{outline:0;}
+input{margin:0;padding:0;border:0;}
 hr {display:none}
 
 a:link,  a:visited {text-decoration:none}
