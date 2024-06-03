@@ -126,10 +126,16 @@ main {
         border-radius: 80px;
         position: relative;
         overflow: hidden;
-        cursor: pointer;
+        transition: all 0.4s;
         /* 박스의 크기 */
         &.small {
             width: calc(100% - (50% + 4px));
+        }
+        &.regular {
+            width: calc(100% / 3);
+            &:nth-child(2) {
+                width: calc(100% / 3 - 16px);
+            }
         }
         &.medium {
             width: calc(100% - (50% + 4px));
@@ -171,7 +177,7 @@ main {
         &.purple {
             background-color: #5500C1;
         }
-        &::after {  
+        /* &::after {  
             content: '';
             display: block;
             position: absolute;
@@ -181,13 +187,14 @@ main {
             height: 100%;
             background-color: rgba(0, 0, 0, 0.18);
             transition: all 0.4s;
-            z-index: 1;
             opacity: 0;
-        }
+            z-index: 1;
+        } */
         &:hover {
-            &::after {
+            /* &::after {
                 opacity: 1;
-            }
+            } */
+            opacity: 0.9;
             .box_contents{
                 .rt > img, .rb > img {
                     animation: vibe 0.3s linear;
@@ -197,7 +204,6 @@ main {
         .title {
             display: flex;
             font-size: 110px;
-            cursor:text;
             z-index: 10;
         }
         .box_contents {
@@ -208,7 +214,6 @@ main {
             .lt > p, .rt > p, .lb > p, .rb > p {
                 font-size: 24px;
                 font-weight: 500;
-                cursor:text;
             }
             .lt {
                 left: 70px;
@@ -260,14 +265,198 @@ main {
     }
     /* section2 - project */
     .project {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
         .box {
             padding: 140px 70px 70px;
+            &.regular {
+                padding: 80px;
+                &:hover {
+                    background-color: #CCFF00;
+                    .sub, .title, .desc, .lang, .web_btn {
+                        color: #000;
+                    }
+                    .web_btn {
+                        border-color: #000;
+                        &::after {
+                            background-image: url('../../public/assets/icon/link_arrow_black.svg');
+                        }
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                }
+            }
         }
         p {
             color: #CCFF00;
         }
         .title {
             font-weight: 200;
+        }
+        .web_project {
+            .txt {
+                .sub, .title, .desc, .web_btn {
+                    transition: all 0.3s;
+                }
+                .sub {
+                    display: block;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color:#CCFF00;
+                    margin-bottom: 10px;
+                }
+                .title {
+                    display: block;
+                    font-size: 80px;
+                    font-weight: 500;
+                    margin-bottom: 24px;
+                    color:#CCFF00
+                }
+                .desc {
+                    display: block;
+                    font-size: 24px;
+                    line-height: 48px;
+                    margin-bottom: 40px;
+                    color: #CCFF00;
+                    .lang {
+                        display: block;
+                        font-size: inherit;
+                        font-weight: 600;
+                        color: inherit;
+                    }
+                }
+            }
+            .btn_wrap {
+                display: flex;
+                gap: 20px;
+                .web_btn {
+                    display: flex;
+                    padding: 16px 32px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #CCFF00;
+                    border: 2px solid #CCFF00;
+                    background-color: transparent;
+                    border-radius: 999px;
+                    transition: all 0.3s;
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 8px;
+                        background: url('../../public/assets/icon/link_arrow.svg') no-repeat center;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    /* section3 - publishing */
+    .pub {
+        .box {
+            .link_box {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                a {
+                    font-size: 24px;
+                    color: #000;
+                    position: relative;
+                    &:not(:first-of-type) {
+                        margin-left: 20px;
+                    }
+                    /* SOK */
+                    &:nth-of-type(1) {
+                        &::after {
+                            background-color: rgba(237, 28, 36, 0.2);
+                        }
+                    }
+                    /* 버크만 */
+                    &:nth-of-type(2) {
+                        &::after {
+                            background-color: rgba(25, 110, 135, 0.2);
+                        }
+                    }
+                    /* ICOMES2024 */
+                    &:nth-of-type(3) {
+                        &::after {
+                            background-color: rgba(92, 3, 120, 0.2);
+                        }
+                    }
+                    /* 새날 CRM */
+                    &:nth-of-type(4) {
+                        &::after {
+                            background-color: rgba(0, 126, 255, 0.2);
+                        }
+                    }
+                    /* 쎄듀런 */
+                    &:nth-of-type(5) {
+                        &::after {
+                            background-color: rgba(9, 185, 198, 0.2);
+                        }
+                    }
+                    /* 팀 허브디앤씨 */
+                    &:nth-of-type(6) {
+                        &::after {
+                            background-color: rgba(44, 125, 246, 0.2);
+                        }
+                    }
+                    /* 미라 파트너스 */
+                    &:nth-of-type(7) {
+                        &::after {
+                            background-color: rgba(67, 35, 112, 0.2);
+                        }
+                    }
+                    /* Labex */
+                    &:nth-of-type(8) {
+                        &::after {
+                            background-color: rgba(203, 42, 34, 0.2);
+                        }
+                    }
+                    /* 바디채널 관리자 */
+                    &:nth-of-type(9) {
+                        &::after {
+                            background-color: rgba(251, 70, 160, 0.2);
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 12px;
+                        position: absolute;
+                        left: 0;
+                        bottom: -4px;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        transition: all 0.3s;
+                    }
+                    &:hover {
+                        &::after {
+                            width:100%;
+                        }
+                    }
+               }
+            }
+        }
+    }
+    /* section4 - design */
+    .design {
+        display: flex;
+        flex-wrap: wrap;
+        gap:8px;
+        .box {
+            cursor: pointer;
+            .logo_img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 110px;
+            }
         }
     }
     .circle_text {
