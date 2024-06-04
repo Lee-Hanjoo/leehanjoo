@@ -3,6 +3,39 @@ html, body, #root {
     background-color: #000;
     color: #fff;
 }
+body {
+    &.hold {
+        overflow: hidden;
+    }
+}
+.pop_dim {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 998;
+}
+.popup {
+    z-index: 999;
+    width: fit-content;
+    max-width: 550px;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .x_btn {
+        position: absolute;
+        right: 0;
+        top: -32px;
+        width: 20px;
+        height: 20px;
+        background: url('../../public/assets/icon/x_btn.svg') no-repeat center;
+        cursor: pointer;
+    }
+}
 main {
     height: 100%;
 }
@@ -14,7 +47,7 @@ main {
     right: 0;
     bottom: 10%;
     box-shadow: 0px 0px 20px rgba(55, 55, 55, 0.2);
-    z-index: 9999;
+    z-index: 997;
     * {
         color: #000;
     }
@@ -336,7 +369,8 @@ main {
                 gap: 20px;
                 .web_btn {
                     display: flex;
-                    padding: 16px 32px;
+                    /* padding: 16px 32px; */
+                    padding: 16px 30px;
                     font-size: 20px;
                     font-weight: 500;
                     color: #CCFF00;
@@ -349,7 +383,7 @@ main {
                         display: block;
                         width: 16px;
                         height: 16px;
-                        margin-left: 8px;
+                        margin: 3px 0 0 8px;
                         background: url('../../public/assets/icon/link_arrow.svg') no-repeat center;
                         transition: all 0.3s;
                     }
