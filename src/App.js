@@ -5,7 +5,6 @@ import Box from './component/Box.js'
 import BoxContents from './component/BoxContents.js'
 import CircleText from './component/CircleText.js'
 import WebProject from './component/WebProject.js'
-import WebButton from './component/WebButton.js'
 import CircleSkillWrap from './component/CircleSkillWrap.js';
 import CircleSkill from './component/CircleSkill.js';
 
@@ -56,7 +55,7 @@ function App() {
                         <Box size="small" color="white" height="290px">
                             <BoxContents 
                             lb="React"
-                            rbIcon="/assets/icon/react.svg"
+                            rbIcon="/assets/icon/react_black.svg"
                             />
                         </Box>
                         <Box size="small" color="black" height="290px">
@@ -208,7 +207,7 @@ function App() {
                     </Box>
                 </div>
                 <div className='introduce'>
-                    <Box size='large' color='black' height="50vw" title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH">
+                    <Box size='large' color='black' height="1200px" title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH">
                         <p className='desc'>
                             이름은 이한주이다. <em>1993</em>년 <em>05</em>월 <em>05</em>일에 태어났다.<br />
                             <em>2020</em>년 <em>02</em>월 이젠 아카데미에서 웹 퍼블리셔 과정을 수료,<br />
@@ -218,8 +217,39 @@ function App() {
                             <em>4</em>개의 음반 발매 이력이 있다.
                         </p>
                         <CircleSkillWrap>
+                            <CircleSkill skill='html5' />
+                            <CircleSkill skill='css3' />
                             <CircleSkill skill='js' />
+                            <CircleSkill skill='leehanjoo' />
+                            <CircleSkill skill='react' />
                         </CircleSkillWrap>
+                        <CircleSkillWrap>
+                            <CircleSkill skill='Ajax' />
+                            <CircleSkill skill='sensitive_people' />
+                            <CircleSkill skill='ts' />
+                            <CircleSkill skill='jquery' />
+                        </CircleSkillWrap>
+                    </Box>
+                </div>
+                <div className='contact'>
+                    <Box 
+                        size='large'
+                        color='black'
+                        height='922px'
+                        title="If you want to work with me,
+                        please contact me below.
+                        Thank you for looking at
+                        my portfolio!"
+                    >
+                         <BoxContents 
+                            lt='CONTACT ME'
+                        />
+                        <ul>
+                            <li>gkswnehcl@gmail.com</li>
+                            <li>010 5530 9355</li>
+                            <li>@gkswnehcl</li>
+                        </ul>
+                        <CircleText>Call Me Right Now</CircleText>
                     </Box>
                 </div>
             </div>
