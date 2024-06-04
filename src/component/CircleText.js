@@ -1,4 +1,5 @@
 export default function CircleText(props) {
+    const { children } = props
       return (
         <>
             <div className="circle_text">
@@ -9,7 +10,7 @@ export default function CircleText(props) {
                     </path>
                     </defs>
                     <text dy="70" textLength="1160">
-                        <textPath xlinkHref="#CircleText">Scroll to my project</textPath>
+                        <textPath xlinkHref="#CircleText">{children}</textPath>
                     </text>
                 </svg>
             </div>
