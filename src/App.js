@@ -6,6 +6,8 @@ import BoxContents from './component/BoxContents.js'
 import CircleText from './component/CircleText.js'
 import WebProject from './component/WebProject.js'
 import WebButton from './component/WebButton.js'
+import CircleSkillWrap from './component/CircleSkillWrap.js';
+import CircleSkill from './component/CircleSkill.js';
 
 function App() {
     return (
@@ -44,26 +46,26 @@ function App() {
             </div>
             <div className="container">
                 <div className="navi">
-                    <Box size='medium' color='pink' height="590" title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH">
+                    <Box size='medium' color='pink' height="590px" title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH">
                         <BoxContents
                         lt='Publishing'
                         lb="Project"
                         rtIcon="/assets/icon/just_l.svg" />
                     </Box>
                     <div className="box_wrap">
-                        <Box size="small" color="white" height="290">
+                        <Box size="small" color="white" height="290px">
                             <BoxContents 
                             lb="React"
                             rbIcon="/assets/icon/react.svg"
                             />
                         </Box>
-                        <Box size="small" color="black" height="290">
+                        <Box size="small" color="black" height="290px">
                             <BoxContents 
                             lb="Design"
                             rbIcon="/assets/icon/design.svg"
                             />
                         </Box>
-                        <Box size="medium" color="cyan" height="290">
+                        <Box size="medium" color="cyan" height="290px">
                             <BoxContents 
                             lb="Contact Me"
                             rbIcon="/assets/icon/contact.svg"
@@ -75,7 +77,7 @@ function App() {
                     <Box 
                         size="large"
                         color='black' 
-                        height="768" 
+                        height="768px" 
                         title={`Through web Publishing works,\n You can check\n my design performance\n and how to write code.`}
                     >
                         <BoxContents 
@@ -86,7 +88,7 @@ function App() {
                     <Box
                         size="regular"
                         color="black"
-                        height="487"
+                        height="487px"
                     >
                         <WebProject 
                             sub="Web renewal"
@@ -100,7 +102,7 @@ function App() {
                     <Box
                         size="regular"
                         color="black"
-                        height="487"
+                        height="487px"
                     >
                         <WebProject 
                             sub="Web renewal"
@@ -115,7 +117,7 @@ function App() {
                     <Box
                         size="regular"
                         color="black"
-                        height="487"
+                        height="487px"
                     >
                         <WebProject 
                             sub="Web renewal"
@@ -130,7 +132,7 @@ function App() {
                     <Box
                         size="large"
                         color="white"
-                        height="585"
+                        height="585px"
                     >
                         <BoxContents
                             lt='00.'
@@ -155,7 +157,7 @@ function App() {
                     <Box
                         size='medium'
                         color='sky'
-                        height='385'
+                        height='385px'
                     >
                         <BoxContents 
                             lt='01.'
@@ -168,15 +170,56 @@ function App() {
                     <Box
                         size='medium'
                         color='brown'
-                        height='385'
+                        height='385px'
                     >
                         <BoxContents 
                             lt='02.'
+                            lb='LOTTE'
+                            rt='Design'
+                            rbIcon="/assets/icon/link_arrow_white.svg"
+                        />
+                        <img className="logo_img" src='/assets/icon/lotte.svg' alt="LOTTE logo"/>
+                    </Box>
+                    <Box
+                        size='medium'
+                        color='deep_green'
+                        height='385px'
+                    >
+                        <BoxContents 
+                            lt='03.'
+                            lb='ROHSEOUL'
+                            rt='Design'
+                            rbIcon="/assets/icon/link_arrow_white.svg"
+                        />
+                        <img className="logo_img" src='/assets/icon/roh.svg' alt="ROHSEOUL logo"/>
+                    </Box>
+                    <Box
+                        size='medium'
+                        color='purple'
+                        height='385px'
+                    >
+                        <BoxContents 
+                            lt='04.'
                             lb='BYHEYDEY'
                             rt='Design'
                             rbIcon="/assets/icon/link_arrow_white.svg"
                         />
-                        <img className="logo_img" src='/assets/icon/byheydey.svg' alt="byheydey logo"/>
+                        <img className="logo_img" src='/assets/icon/byheydey.svg' alt="LOTTE logo"/>
+                    </Box>
+                </div>
+                <div className='introduce'>
+                    <Box size='large' color='black' height="50vw" title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH">
+                        <p className='desc'>
+                            이름은 이한주이다. <em>1993</em>년 <em>05</em>월 <em>05</em>일에 태어났다.<br />
+                            <em>2020</em>년 <em>02</em>월 이젠 아카데미에서 웹 퍼블리셔 과정을 수료,<br />
+                            <em>2023</em>년 <em>02</em>월 메가 스터디에서 웹 퍼블리셔 과정을 수료,<br />
+                            <em>2024</em>년 <em>11</em>월 그린 컴퓨터 아카데미에서 프론트 엔드 과정을 수료하였다.<br />
+                            웹 디자이너로 <em>2</em>년간, 웹 퍼블리셔로 <em>1</em>년간 근무 하였으며,<br />
+                            <em>4</em>개의 음반 발매 이력이 있다.
+                        </p>
+                        <CircleSkillWrap>
+                            <CircleSkill skill='js' />
+                        </CircleSkillWrap>
                     </Box>
                 </div>
             </div>
