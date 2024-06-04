@@ -236,22 +236,24 @@ function App() {
                         size='large'
                         color='black'
                         height='922px'
-                        title="If you want to work with me,
-                        please contact me below.
-                        Thank you for looking at
-                        my portfolio!"
+                        title={`If you want to work with me,\n please contact me below.\n Thank you for looking at\n my portfolio!`}
                     >
                          <BoxContents 
                             lt='CONTACT ME'
                         />
-                        <ul>
-                            <li>gkswnehcl@gmail.com</li>
-                            <li>010 5530 9355</li>
-                            <li>@gkswnehcl</li>
+                        <ul className='info'>
+                            <li><a href='mailto:gkswnehcl@gmail.com' target='_blank'>gkswnehcl@gmail.com</a></li>
+                            <li><a href='tel:010-5530-9355' target='_blank'>010 5530 9355</a></li>
+                            <li><a href='https://www.melon.com/artist/song.htm?artistId=859237' target='_blank'>@Sensitive People</a></li>
                         </ul>
-                        <CircleText>Call Me Right Now</CircleText>
+                        <CircleText>Sensitive People</CircleText>
                     </Box>
                 </div>
+            </div>
+            <div className='footer'>
+                <h1 className='logo'><img src='/assets/icon/just_l.svg' alt='leehanjoo logo' /></h1>
+                <p>Copyright @2023 Leehanjoo</p>
+                <p>LEEHANJOO Portfolio.</p>
             </div>
         </main>
     );

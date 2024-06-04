@@ -520,6 +520,46 @@ main {
             }
         }
     }
+    /* section5 - contact */
+    .contact {
+        .box {
+            padding-top: 140px;
+            .lt > p, .title, .info li > a {
+                color: #FFE600;
+            }
+            .circle_text {
+                #circle_text {
+                    text {
+                        fill: #FFE600;
+                    }
+                }
+                &::after{
+                    background-image: url('../../public/assets/icon/circle_arrow_yellow.svg');
+                }
+            }
+            .info {
+                height: fit-content;
+                display: flex;
+                margin-top: auto;
+                gap: 20px;
+                li {
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        padding: 20px 40px;
+                        border: 1px solid #FFE600;
+                        border-radius: 999px;
+                        font-size: 24px;
+                        transition: background-color 0.1s;
+                        &:hover {
+                            background-color: rgba(255, 230, 0, 0.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
     .circle_text {
         position: absolute;
         right: 0;
@@ -547,6 +587,18 @@ main {
                 fill: #CCFF00;
             }
         }
+    }
+}    
+/* footer */
+.footer {
+    width: 100%;
+    height: 140px;
+    padding: 55px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        font-size: 24px;
     }
 }
 
