@@ -123,6 +123,7 @@ main {
     .box {
         padding: 50px 70px;
         display: flex;
+        flex-wrap: wrap;
         border-radius: 80px;
         position: relative;
         overflow: hidden;
@@ -258,9 +259,11 @@ main {
         }
         .title {
             width: fit-content;
+            height: fit-content;
             justify-content: center;
             white-space: nowrap;
-            animation: rolling 16s linear infinite;
+            animation: rolling_project 16s linear infinite;
+            position: absolute;
         }
     }
     /* section2 - project */
@@ -457,6 +460,37 @@ main {
                 width: 100%;
                 padding: 110px;
             }
+            &:nth-of-type(2) {
+                .logo_img {
+                    padding: 80px;
+                }
+            }
+        }
+    }
+    /* section5 - introduce */
+    .introduce {
+        .box {
+            .title {
+                width: fit-content;
+                height: fit-content;
+                justify-content: center;
+                white-space: nowrap;
+                animation: rolling_introduce 16s linear infinite;
+                color: #00FFC2;
+                font-weight: 200;
+                font-size: 240px;
+            }
+            .desc {
+                font-size: 32px;
+                line-height: 60px;
+                color: #00FFC2;
+                em {
+                    font-style: normal;
+                    font-size: inherit;
+                    color: inherit;
+                    font-family: 'outfit';
+                }
+            }
         }
     }
     .circle_text {
@@ -490,12 +524,21 @@ main {
 }
 
 /* animation */
-@keyframes rolling {
+@keyframes rolling_project {
     0% {
         transform: translateX(0);
     }
     100% {
         transform: translateX(-50.35%);
+    }
+}
+
+@keyframes rolling_introduce {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 
