@@ -8,12 +8,12 @@ import WebProject from './component/WebProject.js'
 import CircleSkillWrap from './component/CircleSkillWrap.js';
 import CircleSkill from './component/CircleSkill.js';
 import Popup from './component/Popup.js';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function App() {
-    // 팝업
     const [popup, setPopup] = useState(0)
-
+    
+    // 팝업
     useEffect(()=>{
         const body = document.querySelector('body')
         if (popup) {
@@ -31,19 +31,21 @@ function App() {
     useEffect(()=>{
         setInterval(()=>{
             setRandomL(Math.floor(Math.random() * 10));
-        }, 800)
+        }, 1000)
         setInterval(()=>{
             setRandomH(Math.floor(Math.random() * 10));
-        }, 1200)
+        }, 1500)
         setInterval(()=>{
             setRandomJ(Math.floor(Math.random() * 10));
-        }, 1000)
+        }, 1300)
     },[], 2000)
 
     // visual > lang - 언어 랜덤 출력
-    let arr = ['Html5', 'Css3', 'jQuery', 'Javascript', 'React', 'React Navtive', 'Ajax', 'TypeScript', 'Zustand', 'gitHub', 'Figma', '']
+    // let arr = ['Html5', 'Css3', 'jQuery', 'Javascript', 'React', 'React Navtive', 'Ajax', 'TypeScript', 'Zustand', 'gitHub', 'Figma', '']
 
-    // anchor 
+    // anchor smooth
+
+    // start on
     return (
         <>
             <main>
@@ -92,7 +94,7 @@ function App() {
                             <BoxContents
                             lt='Publishing'
                             lb="Personal Project"
-                            rtIcon="/assets/icon/just_l.svg" />
+                            rtIcon="/assets/hanjoo.svg" />
                         </Box>
                         <div className="box_wrap">
                             <Box 
@@ -103,7 +105,7 @@ function App() {
                             >
                                 <BoxContents 
                                 lb="Work"
-                                rbIcon="/assets/icon/react_black.svg"
+                                rbIcon="/assets/icon/work.svg"
                                 />
                             </Box>
                             <Box size="small" color="black" height="290px" href="design">
