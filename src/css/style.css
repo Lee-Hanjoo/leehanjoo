@@ -21,11 +21,14 @@ body {
     z-index: 999;
     width: fit-content;
     max-width: 550px;
-    background-color: #fff;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    .pop_inner {
+        max-height: 50vw;
+        overflow-y: auto;
+    }
     .x_btn {
         position: absolute;
         right: 0;
@@ -39,7 +42,7 @@ body {
 main {
     height: 100%;
 }
-.contact_menu {
+.menu {
     width: 54px;
     height: 172px;
     background-color: #fff;
@@ -51,24 +54,39 @@ main {
     * {
         color: #000;
     }
-    a {
+    .cotanct_btn {
         display: block;
         width: 100%;
         height: 100%;
         padding: 15px 10px 20px;
+        margin-bottom: 12px;
+        span {
+            display: block;
+            font-weight: bold;
+            margin-left: 4px;
+        }
+        p {
+            transform: rotate(-90deg);
+            white-space: nowrap;
+            font-weight: 500;
+            position: absolute;
+            left: -8px;
+            bottom: 50px;
+        }
     }
-    span {
+    .top_btn {
         display: block;
-        font-weight: bold;
-        margin-left: 4px;
-    }
-    p {
-        transform: rotate(-90deg);
-        white-space: nowrap;
-        font-weight: 500;
-        position: absolute;
-        left: -8px;
-        bottom: 50px;
+        width: 100%;
+        height: fit-content;
+        background-color: #fff;
+        &::after {
+            content: '';
+            display: block;
+            width: 54px;
+            height: 54px;
+        background: url('/public/assets/icon/link_arrow_black.svg') no-repeat center / 12px;
+        transform: rotate(-45deg);
+        }
     }
 }
 .visual {
@@ -113,10 +131,13 @@ main {
             top: 40%;
             transform: translateY(-50%);
             > li {
-                font-size: 120px;
-                font-weight: bold;
+                width: 90px;
+                height: 90px;
                 &:not(:first-of-type) {
                     margin-left: 24px;
+                }
+                img {
+                    object-fit: contain;
                 }
             }
         }
@@ -280,6 +301,7 @@ main {
         }
         .box {
             align-items: center;
+            cursor: pointer;
         }
         .box_wrap {
             display: flex;
