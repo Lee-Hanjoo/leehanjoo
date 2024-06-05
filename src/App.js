@@ -66,9 +66,6 @@ function App() {
                             color='pink' 
                             height="590px" 
                             title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH"
-                            onClick={()=>{
-                                setPopup(1)
-                            }}
                         >
                             <BoxContents
                             lt='Publishing'
@@ -185,6 +182,9 @@ function App() {
                             size='medium'
                             color='sky'
                             height='385px'
+                            onClick={()=>{
+                                setPopup(1)
+                            }}
                         >
                             <BoxContents 
                                 lt='01.'
@@ -198,6 +198,9 @@ function App() {
                             size='medium'
                             color='brown'
                             height='385px'
+                            onClick={()=>{
+                                setPopup(2)
+                            }}
                         >
                             <BoxContents 
                                 lt='02.'
@@ -211,6 +214,9 @@ function App() {
                             size='medium'
                             color='deep_green'
                             height='385px'
+                            onClick={()=>{
+                                setPopup(3)
+                            }}
                         >
                             <BoxContents 
                                 lt='03.'
@@ -224,6 +230,9 @@ function App() {
                             size='medium'
                             color='purple'
                             height='385px'
+                            onClick={()=>{
+                                setPopup(4)
+                            }}
                         >
                             <BoxContents 
                                 lt='04.'
@@ -285,10 +294,23 @@ function App() {
                 </div>
             </main>
             {popup ? <div className='pop_dim' onClick={()=>{setPopup(undefined)}}></div> : ''}
-            {popup === 1 && 
-                <Popup>
-                    <img src='/assets/byheydey.jpeg' alt='byheydey work'/>
-                </Popup>
+            {popup ? 
+                <Popup setPopup={setPopup}>
+                    {popup === 1 &&
+                        <img src='/assets/hanssem.jpeg' alt='hanssem work'/>
+                    }
+                    {popup === 2 &&
+                        <img src='/assets/lotte.jpeg' alt='lotte work'/>
+                    }
+                    {popup === 3 &&
+                        <img src='/assets/rohseoul.jpeg' alt='roh work'/>
+                    }
+                    {popup === 4 &&
+                        <img src='/assets/byheydey.jpeg' alt='byheydey work'/>
+                    }
+                </Popup> 
+                : 
+                ''
             }
         </>
     );

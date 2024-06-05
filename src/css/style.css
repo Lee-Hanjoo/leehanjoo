@@ -21,11 +21,14 @@ body {
     z-index: 999;
     width: fit-content;
     max-width: 550px;
-    background-color: #fff;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    .pop_inner {
+        max-height: 50vw;
+        overflow-y: auto;
+    }
     .x_btn {
         position: absolute;
         right: 0;
