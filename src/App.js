@@ -11,6 +11,7 @@ import Popup from './component/Popup.js';
 import { useEffect, useState } from 'react';
 
 function App() {
+    // 팝업
     const [popup, setPopup] = useState(0)
 
     useEffect(()=>{
@@ -22,19 +23,39 @@ function App() {
         } 
     },[popup])
 
-    // 24.06.04 팝업 안에 close 버튼 setPopup(false) 디스패치 하는거
+    // visual > name - LHJ 이미지 랜덤 출력
+    const [randomL, setRandomL] = useState(1);
+    const [randomH, setRandomH] = useState(1);
+    const [randomJ, setRandomJ] = useState(1);
+    
+    useEffect(()=>{
+        setInterval(()=>{
+            setRandomL(Math.floor(Math.random() * 10));
+        }, 800)
+        setInterval(()=>{
+            setRandomH(Math.floor(Math.random() * 10));
+        }, 1200)
+        setInterval(()=>{
+            setRandomJ(Math.floor(Math.random() * 10));
+        }, 1000)
+    },[], 2000)
 
+    // visual > lang - 언어 랜덤 출력
+    let arr = ['Html5', 'Css3', 'jQuery', 'Javascript', 'React', 'React Navtive', 'Ajax', 'TypeScript', 'Zustand', 'gitHub', 'Figma', '']
+
+    // anchor 
     return (
         <>
             <main>
-                <div className="contact_menu">
-                    <a href="">
+                <div className="menu">
+                    <a href="#contact" className='cotanct_btn'>
                         <span>Thx.</span>
                         <p>Contact Me</p>
                     </a>
+                    <a href="#" className='top_btn'></a>
                 </div>
                 <div className='visual'>
-                    <h1 className="logo">한주</h1>
+                    <h1 className="logo"><img src='/assets/logo.png' alt='hanjoo logo' /></h1>
                     <ul className="star">
                         <li>
                             <img src="/assets/star.svg" alt="" />
@@ -54,9 +75,9 @@ function App() {
                     <p className="txt portfolio">Lee Han joo Portfolio</p>
                     <p className="txt dev">Front-end.Dev</p>
                     <ul className="txt name">
-                        <li>L</li>
-                        <li>H</li>
-                        <li>J</li>
+                        <li><img src={`/assets/icon/L_` + randomL + `.png`} alt=''/></li>
+                        <li><img src={`/assets/icon/H_` + randomH + `.png`} alt=''/></li>
+                        <li><img src={`/assets/icon/J_` + randomJ + `.png`} alt=''/></li>
                     </ul>
                 </div>
                 <div className="container">
@@ -66,10 +87,11 @@ function App() {
                             color='pink' 
                             height="590px" 
                             title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH"
+                            href='project'
                         >
                             <BoxContents
                             lt='Publishing'
-                            lb="Project"
+                            lb="Personal Project"
                             rtIcon="/assets/icon/just_l.svg" />
                         </Box>
                         <div className="box_wrap">
@@ -77,19 +99,20 @@ function App() {
                                 size="small" 
                                 color="white" 
                                 height="290px"
+                                href='pub'
                             >
                                 <BoxContents 
-                                lb="React"
+                                lb="Work"
                                 rbIcon="/assets/icon/react_black.svg"
                                 />
                             </Box>
-                            <Box size="small" color="black" height="290px">
+                            <Box size="small" color="black" height="290px" href="design">
                                 <BoxContents 
                                 lb="Design"
                                 rbIcon="/assets/icon/design.svg"
                                 />
                             </Box>
-                            <Box size="medium" color="cyan" height="290px">
+                            <Box size="medium" color="cyan" height="290px" href="contact">
                                 <BoxContents 
                                 lb="Contact Me"
                                 rbIcon="/assets/icon/contact.svg"
@@ -97,7 +120,7 @@ function App() {
                             </Box>
                         </div>
                     </div>
-                    <div className="project">
+                    <div className="project" id="project">
                         <Box 
                             size="large"
                             color='black' 
@@ -105,7 +128,7 @@ function App() {
                             title={`Through web Publishing works,\n You can check\n my design performance\n and how to write code.`}
                         >
                             <BoxContents 
-                                lt="WEB PROJECT"
+                                lt="PERSONAL PROJECT"
                             />
                             <CircleText>Scroll to check my project</CircleText>
                         </Box>
@@ -152,7 +175,7 @@ function App() {
                             />
                         </Box>
                     </div>
-                    <div className='pub'>
+                    <div className='pub' id="pub">
                         <Box
                             size="large"
                             color="white"
@@ -160,7 +183,7 @@ function App() {
                         >
                             <BoxContents
                                 lt='00.'
-                                lb='Working'
+                                lb='Work'
                                 rt='Publishing'
                                 rbIcon="/assets/icon/link_arrow_black.svg"
                             />
@@ -177,7 +200,7 @@ function App() {
                                 </div>
                         </Box>
                     </div>
-                    <div className='design'>
+                    <div className='design' id="design">
                         <Box
                             size='medium'
                             color='sky'
@@ -268,7 +291,7 @@ function App() {
                             </CircleSkillWrap>
                         </Box>
                     </div>
-                    <div className='contact'>
+                    <div className='contact' id="contact">
                         <Box 
                             size='large'
                             color='black'
