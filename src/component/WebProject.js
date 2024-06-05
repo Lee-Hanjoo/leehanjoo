@@ -2,23 +2,23 @@ import { useState } from 'react';
 import WebButton from './WebButton.js'
 
 export default function WebProject(props) {
-    const {sub, title, desc, lang, webLink, tabLink, moLink } = props
+    const {sub, title, desc, webLink, tabLink, moLink } = props
 
       return (
         <div className="web_project">
             <div className="txt">
                 <p className="title"><span className="sub">{sub}</span>{title}</p>
-                <span className="desc">{desc}<b className="lang">{lang}</b></span>
+                <span className="desc">{desc}</span>
             </div>
             <div className="btn_wrap">
                 {webLink ? 
-                    <WebButton title="Web" link={webLink} /> : ''
+                    <WebButton title="PC" link={webLink} /> : ''
                 }
                 {tabLink ? 
-                    <WebButton title="Tablet" link={tabLink} /> : ''
+                    <WebButton title="TAB" link={tabLink} /> : ''
                 }
                 {moLink ? 
-                    <WebButton title="Mobile" link={moLink} /> : ''
+                    <WebButton title="MB" link={moLink} /> : ''
                 }
             </div>
         </div>
