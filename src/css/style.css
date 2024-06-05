@@ -303,6 +303,13 @@ main {
             color: inherit;
             font-weight: 900;
         }
+        em {
+            font-style: normal;
+            font-size: inherit;
+            font-weight: inherit;
+            color: inherit;
+            font-family: 'outfit';
+        }
     }
 
     /* section1 - navi */
@@ -556,12 +563,6 @@ main {
                 font-size: 32px;
                 line-height: 60px;
                 color: #00FFC2;
-                em {
-                    font-style: normal;
-                    font-size: inherit;
-                    color: inherit;
-                    font-family: 'outfit';
-                }
             }
             .circle_skill_wrap {
                 display: flex;
