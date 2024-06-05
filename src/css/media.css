@@ -3,36 +3,245 @@
 @media screen and (max-width:1470px) {
     
 }
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1240px) {
+    .pc_only, .pc_flex {
+        display: none !important;
+    }
+    .mb_only {
+        display: block !important;
+    }
+    .mb_flex {
+        display: flex !important;
+    }
+    /* visual */
+    .visual {
+        .logo {
+            width: 52px;
+            bottom: 8px;
+        }
+        .txt {
+            &.lang {
+                left: 40px;
+                top: 32px;
+                > li {
+                    font-size: 52px;
+                }
+            }
+            &.dev {
+                font-size: 48px;
+                left: 40px;
+                top: 268px;
+            }
+            &.portfolio {
+                right: 40px;
+                top: 40px;
+            }
+            &.name {
+                right:40px;
+                > li {
+                    width: 64px;
+                    height: 65px;
+                }
+            }
+        }
+    }
     .container {
+        .box {
+            padding: 52px 60px;
+            .box_contents {
+                .lt > p, .rt > p, .lb > p, .rb > p {
+                    font-size: 20px;
+                }
+                .lt {
+                    left: 60px;
+                    top: 52px;
+                }
+                .rt {
+                    right: 60px;
+                    top: 52px;
+                }
+                .lb {
+                    left: 60px;
+                    bottom: 52px;
+                }
+                .rb {
+                    right: 60px;
+                    bottom: 52px;
+                }
+            }
+        }
         /* section1 - navi */
-        /* .navi {
-            flex-direction: column;
+        .navi {
+            padding-bottom: 12px;
             .box {
-                &.medium {
-                    margin-bottom: 8px;
-                    width: 50%;
+                width: calc(50% - 4px) !important;
+                &:first-of-type {
+                    height: 400px !important;
+                }
+                &:nth-of-type(2) {
+                    width: calc(50% - 4px) !important;
+                    height: 196px !important;
+                }
+                &:nth-of-type(3) {
+                    width: calc(50% - 12px) !important;
+                    height: 196px !important;
+                    position: absolute;
+                    right: 8px;
+                    bottom: 252px;
+                }
+                &:last-of-type {
+                    width: 100% !important;
+                    height: 240px !important;
+                    position:relative;
+                    left: 0px;
+                    bottom: -8px;
+                }
+                .title {
+                    font-size: 80px;
                 }
             }
-            .box_wrap {
-                width: 100%;
-                .box {
-                }
-            }
-        } */
+        }
         /* section2 - project */
-        /* .project {
+        .project {
             .box {
-                height: 572px !important;
+                height: 340px !important;
+                padding: 100px 60px 52px;
+                &:first-of-type {
+                    height: 400px !important;
+                }
+                .title {
+                    font-size: 56px;
+                    .sub {font-size: 20px;}
+                }
+                &.regular {
+                    padding: 56px 40px;
+                }
+                .web_project {
+                    .title {
+                        font-size: 48px;
+                    }
+                    .desc {
+                        font-size: 20px;
+                    }
+                    & .btn_wrap {
+                        position: absolute;
+                        left: 40px;
+                        bottom: 56px;
+                        gap: 12px;
+                        .web_btn {
+                            padding: 12px 20px;
+                            font-size: 16px;
+                            &::after {
+                                background-size: 12px;
+                                margin: 1px 0 0 6px;
+                            }
+                        }
+                    }
+                }
             }
-            .title {
-                font-size: 80px;
+        }
+        /* section3 - pub */
+        .pub {
+            .box {
+                .title {
+                    font-size: 56px;
+                }
+                .link_box {
+                    width: 62%;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
             }
-        } */
+        }
+        /* section4 - design */
+        .design {
+            .box {
+                &:nth-of-type(2) {
+                    .logo_img {
+                        padding: 100px;
+                    }
+                }
+                .logo_img {
+                    padding: 80px;
+                }
+            }
+        }
+        /* section5 - introduce */
+        .introduce {
+            .box {
+                height: 820px !important;
+                .title {
+                    font-size: 140px;
+                }
+                .desc {
+                    font-size: 20px;
+                    line-height: 36px;
+                    position: absolute;
+                    left: auto;
+                    top: 280px;
+                }
+                .circle_skill_wrap {
+                    right: -100px;
+                    top: 480px;
+                    &:nth-of-type(2) {
+                        right: -100px;
+                        top: 648px;
+                    }
+                    .circle_skill {
+                        width: 200px;
+                        height: 200px;
+                        padding: 64px;
+                    }
+                }
+            }
+        }
+        /* section6 - contact */
+        .contact {
+            .box {
+                height: 560px !important;
+                padding-top: 100px;
+                .title {
+                    font-size: 56px;
+                    line-height: 72px;
+                }
+                 .info {
+                    & li {
+                        a {
+                            padding: 12px 20px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .circle_text {
+            #circle_text {
+                height: 140px;
+            }
+        }
+    }
+    .footer {
+        height: 100px;
+        .logo {
+            width: 40px;
+            height: auto;
+        }
+        p {
+            font-size: 20px;
+        }
     }
 }
 @media screen and (max-width:1024px) {
-    
+    .container{
+        /* section3 - pub */
+        .pub {
+            .box {
+                .link_box {
+                    width: 65%;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width:768px) {
     

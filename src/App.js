@@ -114,7 +114,7 @@ function App() {
                             rbIcon="/assets/icon/design.svg"
                             />
                         </Box>
-                        <Box size="medium" color="cyan" height="290px" href="contact">
+                        <Box size="medium" color="cyan" height="292px" href="contact">
                             <BoxContents 
                             lb="Contact Me"
                             rbIcon="/assets/icon/contact.svg"
@@ -126,7 +126,7 @@ function App() {
                             size="large"
                             color='black' 
                             height="768px" 
-                            title={`개인 작업물입니다.\n설계, 디자인, 코딩까지\n기여도 100% 작업물입니다.\n뭐라고 적을까요`}
+                            title={`개인 작업물입니다.\n<strong>설계</strong>, <strong>디자인</strong>, <strong>코딩</strong>까지\n<strong>기여도 100%</strong> 작업물입니다.\n뭐라고 적을까요`}
                         >
                             <BoxContents 
                                 lt="PERSONAL PROJECT"
@@ -136,13 +136,12 @@ function App() {
                         <Box
                             size="regular"
                             color="black"
-                            height="487px"
+                            height="460px"
                         >
                             <WebProject 
                                 sub="Web renewal"
                                 title="HanaTour"
-                                desc="하나투어 적응형 웹 사이트 리뉴얼"
-                                lang="Html5, Css3, jQuery, Ajax, Figma"
+                                desc="적응형 웹 사이트 리뉴얼"
                                 webLink='https://www.naver.com'
                                 moLink='https://www.daum.net'
                             />
@@ -150,13 +149,12 @@ function App() {
                         <Box
                             size="regular"
                             color="black"
-                            height="487px"
+                            height="460px"
                         >
                             <WebProject 
                                 sub="Web renewal"
                                 title="CBNUH"
-                                desc="충북대학교병원 반응형 웹 사이트 리뉴얼"
-                                lang="Html5, Css3, JS, jQuery, Plug-in, Figma"
+                                desc="반응형 웹 사이트 리뉴얼"
                                 webLink='https://www.nate.com'
                                 tabLink='https://www.youtube.com'
                                 moLink='https://www.google.com'
@@ -165,13 +163,12 @@ function App() {
                         <Box
                             size="regular"
                             color="black"
-                            height="487px"
+                            height="460px"
                         >
                             <WebProject 
-                                sub="Web renewal"
+                                sub="Portfolio"
                                 title="MyPortfolio"
                                 desc="개인 포트폴리오 사이트"
-                                lang="Html5, Css3, React, JS, Figma"
                                 webLink='https://www.nate.com'
                             />
                         </Box>
@@ -181,7 +178,7 @@ function App() {
                             size="large"
                             color="white"
                             height="585px"
-                            title="실제 노출되고있는 실무 프로젝트 입니다."
+                            title="실제 노출되고있는 <strong>실무 프로젝트</strong> 입니다."
                         >
                             <BoxContents
                                 lt='00.'
@@ -193,10 +190,10 @@ function App() {
                                     <a href="https://sokorea.or.kr/" title="SOK" target='_blank'>SOK</a>
                                     <a href="https://birkmankorea.co.kr/" title="Birkman" target='_blank'>Birkman</a>
                                     <a href="https://icomes.or.kr/" title="ICOMES2024" target='_blank'>ICOMES2024</a>
-                                    <a href="http://www.salesmac.com/employee/login" title="새날 CRM" target='_blank'>새날 CRM</a>
-                                    <a href="https://cedulearn.com/" title="쎄듀런" target='_blank'>쎄듀런</a>
                                     <a href="http://teamhubdnc.com/" title="팀 허브디앤씨" target='_blank'>팀 허브디앤씨</a>
                                     <a href="https://www.mirapartners.im/" title="미라 파트너스" target='_blank'>미라 파트너스</a>
+                                    <a href="http://www.salesmac.com/employee/login" title="새날 CRM" target='_blank'>새날 CRM</a>
+                                    <a href="https://cedulearn.com/" title="쎄듀런" target='_blank'>쎄듀런</a>
                                     <a href="https://labex.kr/goods/goods_list.php" title="Labex" target='_blank'>Labex</a>
                                     <a href="" title="바디채널">바디채널 관리자</a>
                                 </div>
@@ -271,12 +268,12 @@ function App() {
                     <div className='introduce'>
                         <Box size='large' color='black' height="1200px" title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH">
                             <p className='desc'>
-                                이름은 이한주이다. <em>1993</em>년 <em>05</em>월 <em>05</em>일에 태어났다.<br />
-                                <em>2020</em>년 <em>02</em>월 이젠 아카데미에서 웹 퍼블리셔 과정을 수료,<br />
-                                <em>2023</em>년 <em>02</em>월 메가 스터디에서 웹 퍼블리셔 과정을 수료,<br />
-                                <em>2024</em>년 <em>11</em>월 그린 컴퓨터 아카데미에서 프론트 엔드 과정을 수료하였다.<br />
-                                웹 디자이너로 <em>2</em>년간, 웹 퍼블리셔로 <em>1</em>년간 근무 하였으며,<br />
-                                <em>4</em>개의 음반 발매 이력이 있다.
+                                이름은 <strong>이한주</strong>이다. <em>1993</em>년 <em>05</em>월 <em>05</em>일에 태어났다.<br />
+                                <em>2020</em>년 <em>02</em>월 이젠 아카데미에서 <strong>웹 퍼블리셔</strong> 과정을 수료,<br />
+                                <em>2023</em>년 <em>02</em>월 메가 스터디에서 <strong>웹 퍼블리셔</strong> 과정을 수료,<br />
+                                <em>2024</em>년 <em>11</em>월 그린 컴퓨터 아카데미에서 <strong>프론트 엔드</strong> 과정을 수료하였다.<br />
+                                <strong>웹 디자이너로 <em>2</em>년</strong>간, <strong>웹 퍼블리셔로 <em>1</em>년</strong>간 근무 하였으며,<br />
+                                <strong><em>4</em>개의 음반 발매</strong> 이력이 있다.
                             </p>
                             <CircleSkillWrap>
                                 <CircleSkill skill='html5' />
@@ -298,7 +295,7 @@ function App() {
                             size='large'
                             color='black'
                             height='922px'
-                            title={`If you want to work with me,\n please contact me below.\n Thank you for looking at\n my portfolio!`}
+                            title={`<strong>능동적</strong>이고 <strong>즐거움을 추구</strong>하는 개발자\n<strong>원활한 커뮤니케이션 능력</strong>을 겸비한 인재\n어쩌고저쩌고\n안녕하세요 반갑습니다!`}
                         >
                             <BoxContents 
                                 lt='CONTACT ME'

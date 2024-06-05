@@ -2,6 +2,8 @@ import { useState } from "react";
 
 export default function Box(props) {
   const {size, children, title, color, height, onClick, href } = props
+  let data = title;
+
     return (
       <>
         <div 
@@ -10,7 +12,7 @@ export default function Box(props) {
           onClick={onClick ? onClick : ()=>{window.location.href = `#${href}`}}
         >
           { title ? 
-            <p className="title">{title}</p> : ''
+            <p className="title" dangerouslySetInnerHTML={{__html: data}}></p> : ''
           }
           {children}
         </div>
