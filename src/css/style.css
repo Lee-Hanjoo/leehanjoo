@@ -296,20 +296,15 @@ main {
     .navi {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         > div {
             width: calc(50% - 4px);
         }
         .box {
             align-items: center;
             cursor: pointer;
-        }
-        .box_wrap {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            .medium {
-                width: 100%;
-                margin-left: 0;
+            &.small {
+                width:calc(25% - 4px);
             }
         }
         .title {
@@ -391,7 +386,6 @@ main {
                 gap: 20px;
                 .web_btn {
                     display: flex;
-                    /* padding: 16px 32px; */
                     padding: 16px 30px;
                     font-size: 20px;
                     font-weight: 500;
@@ -399,6 +393,7 @@ main {
                     border: 2px solid #CCFF00;
                     background-color: transparent;
                     border-radius: 999px;
+                    white-space: nowrap;
                     transition: all 0.3s;
                     &::after {
                         content: '';
@@ -416,11 +411,24 @@ main {
     /* section3 - publishing */
     .pub {
         .box {
+            .title {
+                height: fit-content;
+                font-size: 80px;
+                font-weight: 200;
+                white-space: nowrap;
+                position: absolute;
+                left: 50%;
+                top: 210px;
+                transform: translateX(-50%);
+            }
             .link_box {
                 display: flex;
-                width: 100%;
-                align-items: center;
-                justify-content: center;
+                height: fit-content;
+                white-space: nowrap;
+                position: absolute;
+                left: 50%;
+                top: 330px;
+                transform: translateX(-50%);
                 a {
                     font-size: 24px;
                     color: #000;

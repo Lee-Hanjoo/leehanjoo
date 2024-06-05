@@ -1,6 +1,7 @@
 import './App.css';
 import './css/reset.css';
 import './css/style.css';
+import './css/media.css';
 import Box from './component/Box.js'
 import BoxContents from './component/BoxContents.js'
 import CircleText from './component/CircleText.js'
@@ -96,38 +97,36 @@ function App() {
                             lb="Personal Project"
                             rtIcon="/assets/hanjoo.svg" />
                         </Box>
-                        <div className="box_wrap">
-                            <Box 
-                                size="small" 
-                                color="white" 
-                                height="290px"
-                                href='pub'
-                            >
-                                <BoxContents 
-                                lb="Work"
-                                rbIcon="/assets/icon/work.svg"
-                                />
-                            </Box>
-                            <Box size="small" color="black" height="290px" href="design">
-                                <BoxContents 
-                                lb="Design"
-                                rbIcon="/assets/icon/design.svg"
-                                />
-                            </Box>
-                            <Box size="medium" color="cyan" height="290px" href="contact">
-                                <BoxContents 
-                                lb="Contact Me"
-                                rbIcon="/assets/icon/contact.svg"
-                                />
-                            </Box>
-                        </div>
+                        <Box 
+                            size="small" 
+                            color="white" 
+                            height="290px"
+                            href='pub'
+                        >
+                            <BoxContents 
+                            lb="Work"
+                            rbIcon="/assets/icon/work.svg"
+                            />
+                        </Box>
+                        <Box size="small" color="black" height="290px" href="design">
+                            <BoxContents 
+                            lb="Design"
+                            rbIcon="/assets/icon/design.svg"
+                            />
+                        </Box>
+                        <Box size="medium" color="cyan" height="290px" href="contact">
+                            <BoxContents 
+                            lb="Contact Me"
+                            rbIcon="/assets/icon/contact.svg"
+                            />
+                        </Box>
                     </div>
                     <div className="project" id="project">
                         <Box 
                             size="large"
                             color='black' 
                             height="768px" 
-                            title={`Through web Publishing works,\n You can check\n my design performance\n and how to write code.`}
+                            title={`개인 작업물입니다.\n설계, 디자인, 코딩까지\n기여도 100% 작업물입니다.\n뭐라고 적을까요`}
                         >
                             <BoxContents 
                                 lt="PERSONAL PROJECT"
@@ -182,6 +181,7 @@ function App() {
                             size="large"
                             color="white"
                             height="585px"
+                            title="실제 노출되고있는 실무 프로젝트 입니다."
                         >
                             <BoxContents
                                 lt='00.'
