@@ -1,7 +1,111 @@
 /* 1470, 1024, 768, 480 */
-
+@media screen and (max-width:1695px) {
+    .container {
+        .project {
+            .box {
+                &.regular {
+                    padding: 64px;
+                    height: 412px !important;
+                }
+                .btn_wrap {
+                    gap: 12px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1550px) {
+    .container {
+        .project {
+            .box {
+                &.regular {
+                    height: 394px !important;
+                }
+                .web_project {
+                    & .txt {
+                        .title {
+                            font-size: 64px;
+                        }
+                    }
+                }
+                .btn_wrap {
+                    gap: 12px;
+                    .web_btn {
+                        padding: 12px 20px;
+                        font-size: 14px;
+                        &::after {
+                            margin-top: 0;
+                            background-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:1470px) {
-    
+    .visual {
+        .txt {
+            &.dev {
+                top: 55%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+@media screen and (max-width:1300px) {
+    .container {
+        .project {
+            .box {
+                &.regular {
+                    padding: 48px;
+                    height: 352px !important;
+                }
+                .web_project {
+                    & .txt {
+                        .title {
+                            font-size: 48px;
+                        }
+                    }
+                }
+                .btn_wrap {
+                    gap: 12px;
+                    .web_btn {
+                        padding: 12px 20px;
+                        font-size: 14px;
+                        &::after {
+                            margin-top: 0;
+                            background-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1300px) {
+    .container {
+        .box {
+            .title {
+                font-size: 80px;
+            }
+        }
+        .project {
+            .box {
+                height: 584px !important;
+                &.regular {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    .btn_wrap {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width:1240px) {
     .pc_only, .pc_flex {
@@ -104,13 +208,13 @@
         /* section2 - project */
         .project {
             .box {
-                height: 340px !important;
-                padding: 100px 60px 52px;
+                height: auto !important;
+                padding: 100px 48px 52px;
                 &:first-of-type {
-                    height: 400px !important;
+                    height: 412px !important;
                 }
                 .title {
-                    font-size: 56px;
+                    font-size: 48px;
                     .sub {font-size: 20px;}
                 }
                 &.regular {
@@ -123,7 +227,7 @@
                     .desc {
                         font-size: 20px;
                     }
-                    & .btn_wrap {
+                    /* & .btn_wrap {
                         position: absolute;
                         left: 40px;
                         bottom: 56px;
@@ -136,7 +240,7 @@
                                 margin: 1px 0 0 6px;
                             }
                         }
-                    }
+                    } */
                 }
             }
         }
@@ -145,6 +249,8 @@
             .box {
                 .title {
                     font-size: 56px;
+                    text-align: center;
+                    top: 150px;
                 }
                 .link_box {
                     width: 62%;
@@ -171,7 +277,7 @@
             .box {
                 height: 820px !important;
                 .title {
-                    font-size: 140px;
+                    font-size: 120px;
                 }
                 .desc {
                     font-size: 20px;
@@ -201,8 +307,8 @@
                 height: 560px !important;
                 padding-top: 100px;
                 .title {
-                    font-size: 56px;
-                    line-height: 72px;
+                    font-size: 48px;
+                    line-height: 64px;
                 }
                  .info {
                     & li {
@@ -232,6 +338,10 @@
     }
 }
 @media screen and (max-width:1024px) {
+    .visual {
+        height: 60vw;
+        min-height: 500px;
+    }
     .container{
         /* section3 - pub */
         .pub {
@@ -241,11 +351,127 @@
                 }
             }
         }
+        /* section4 - design */
+        .design {
+            & .box {
+                &:nth-of-type(2) {
+                    .logo_img {
+                        padding: 96px;
+                    }
+                }
+                .logo_img {
+                    padding: 64px;
+                }
+            }
+        }
+        /* section5 - introduce */
+        .introduce {
+            .box {
+                height: 632px !important;
+                .title {
+                    font-size: 100px;
+                }
+                .desc {
+                    top: 212px;
+                }
+                .circle_skill_wrap {
+                    right: -110px;
+                    top: 350px;
+                    &:nth-of-type(2) {
+                        right: -100px;
+                        top: 488px;
+                    }
+                    .circle_skill {
+                        width: 160px;
+                        height: 160px;
+                        padding: 64px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    .container {
+        /* section5 - introduce */
+        .introduce {
+            .box {
+                height: 758px !important;
+                .title {
+                    font-size: 100px;
+                }
+                .desc {
+                    top: 212px;
+                }
+                .circle_skill_wrap {
+                    right: -120px;
+                    top: 470px;
+                    &:nth-of-type(2) {
+                        right: -100px;
+                        top: 618px;
+                    }
+                    .circle_skill {
+                        width: 160px;
+                        height: 160px;
+                        padding: 64px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width:768px) {
-    
+    .container {
+        .box {
+            .box_contents {
+                .lt {
+                    left: 52px;
+                    top: 48px;
+                }
+                .rt {
+                    right:52px;
+                    top: 48px;
+                }
+                .lb {
+                    left: 52px;
+                    bottom: 48px;
+                }
+                .rb {
+                    right: 52px;
+                    bottom: 48px;
+                }
+            }
+        }
+        .design {
+            .box {
+                height: 320px !important;
+                &:nth-of-type(2) {
+                    .logo_img {
+                        padding: 60px;
+                    }
+                }
+                .logo_img {
+                    padding: 32px;
+                }
+            }
+        }
+    }   
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:685px) {
+    .container {
+        .design {
+            .box {
+                height: 290px !important;
+                &:nth-of-type(2) {
+                    .logo_img {
+                        padding: 48px;
+                    }
+                }
+                .logo_img {
+                    padding: 12px;
+                }
+            }
+        }
+    }
     
 }

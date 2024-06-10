@@ -47,6 +47,17 @@ function App() {
     // anchor smooth
 
     // start on
+
+    // 680 아래로 리사이즈 비율
+    useEffect(()=>{
+        const resize = () => {
+            var minWidth = 680;
+            var body = document.getElementsByTagName('body')[0];
+            if (window.innerWidth < minWidth) { body.style.zoom = (window.innerWidth / minWidth); }
+            else body.style.zoom = 1;
+        }
+        window.addEventListener('resize', resize);
+    },[])
     return (
         <>
             <main>
@@ -167,7 +178,7 @@ function App() {
                         >
                             <WebProject 
                                 sub="Portfolio"
-                                title="MyPortfolio"
+                                title="Portfolio"
                                 desc="개인 포트폴리오 사이트"
                                 webLink='https://www.nate.com'
                             />
@@ -178,7 +189,7 @@ function App() {
                             size="large"
                             color="white"
                             height="585px"
-                            title="실제 노출되고있는 <strong>실무 프로젝트</strong> 입니다."
+                            title="실제 노출되었던 <br class='mb_only' /><strong>실무 프로젝트</strong> 입니다."
                         >
                             <BoxContents
                                 lt='00.'
@@ -295,7 +306,7 @@ function App() {
                             size='large'
                             color='black'
                             height='922px'
-                            title={`<strong>능동적</strong>이고 <strong>즐거움을 추구</strong>하는 개발자\n<strong>원활한 커뮤니케이션 능력</strong>을 겸비한 인재\n어쩌고저쩌고\n안녕하세요 반갑습니다!`}
+                            title={`<strong>능동적</strong>이고 <strong>즐거움을 추구</strong>하는 개발자\n<strong>원활한 커뮤니케이션 능력</strong>을 겸비한 인재 \n어쩌고저쩌고\n안녕하세요 반갑습니다!`}
                         >
                             <BoxContents 
                                 lt='CONTACT ME'
