@@ -153,8 +153,8 @@ function App() {
                                 sub="Web renewal"
                                 title="HanaTour"
                                 desc="적응형 웹 사이트 리뉴얼"
-                                webLink='https://www.naver.com'
-                                moLink='https://www.daum.net'
+                                webLink='http://leehanjoo.dothome.co.kr/'
+                                moLink='http://leehanjoo.dothome.co.kr/'
                             />
                         </Box>
                         <Box
@@ -166,9 +166,9 @@ function App() {
                                 sub="Web renewal"
                                 title="CBNUH"
                                 desc="반응형 웹 사이트 리뉴얼"
-                                webLink='https://www.nate.com'
-                                tabLink='https://www.youtube.com'
-                                moLink='https://www.google.com'
+                                webLink='http://leehanjoo2.dothome.co.kr/'
+                                tabLink='http://leehanjoo2.dothome.co.kr/'
+                                moLink='http://leehanjoo2.dothome.co.kr/'
                             />
                         </Box>
                         <Box
@@ -180,7 +180,7 @@ function App() {
                                 sub="Portfolio"
                                 title="Portfolio"
                                 desc="개인 포트폴리오 사이트"
-                                webLink='https://www.nate.com'
+                                webLink='http://leehanjoo3.dothome.co.kr/'
                             />
                         </Box>
                     </div>
