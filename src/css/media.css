@@ -53,36 +53,7 @@
         }
     }
 }
-@media screen and (max-width:1300px) {
-    .container {
-        .project {
-            .box {
-                &.regular {
-                    padding: 48px;
-                    height: 352px !important;
-                }
-                .web_project {
-                    & .txt {
-                        .title {
-                            font-size: 48px;
-                        }
-                    }
-                }
-                .btn_wrap {
-                    gap: 12px;
-                    .web_btn {
-                        padding: 12px 20px;
-                        font-size: 14px;
-                        &::after {
-                            margin-top: 0;
-                            background-size: 12px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+
 @media screen and (max-width:1300px) {
     .container {
         .box {
@@ -94,15 +65,38 @@
             .box {
                 height: 584px !important;
                 &.regular {
-                    display: block;
                     width: 100%;
+                    height: 352px !important;
+                    padding: 48px;
+                    display: block;
                     text-align: center;
                     .btn_wrap {
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
+                        gap: 12px;
+                        .web_btn {
+                            padding: 12px 20px;
+                            font-size: 14px;
+                            &::after {
+                                margin-top: 0;
+                                background-size: 12px;
+                            }
+                        }
+                    }
+                    .web_project {
+                        & .txt {
+                            .title {
+                                font-size: 48px;
+                            }
+                        }
                     }
                 }
+            }
+        }
+        .contact {
+            .box {
+                height: 680px !important;
             }
         }
     }
@@ -304,13 +298,14 @@
         /* section6 - contact */
         .contact {
             .box {
-                height: 560px !important;
+                height: 510px !important;
                 padding-top: 100px;
                 .title {
                     font-size: 48px;
                     line-height: 64px;
                 }
                  .info {
+                    gap:12px;
                     & li {
                         a {
                             padding: 12px 20px;
@@ -452,6 +447,13 @@
                 }
                 .logo_img {
                     padding: 32px;
+                }
+            }
+        }
+        .contact {
+            .box {
+                .circle_text {
+                    display: none;
                 }
             }
         }
