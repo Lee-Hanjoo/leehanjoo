@@ -3,6 +3,7 @@ html, body, #root {
     background-color: #000;
     color: #fff;
 }
+html { scroll-behavior: smooth; }
 body {
     &.hold {
         overflow: hidden;
@@ -401,6 +402,7 @@ main {
             .btn_wrap {
                 display: flex;
                 gap: 20px;
+                flex-wrap: wrap;
                 .web_btn {
                     display: flex;
                     padding: 16px 30px;
@@ -410,7 +412,6 @@ main {
                     border: 2px solid #CCFF00;
                     background-color: transparent;
                     border-radius: 999px;
-                    white-space: nowrap;
                     transition: all 0.3s;
                     &::after {
                         content: '';
@@ -563,6 +564,8 @@ main {
                 font-size: 32px;
                 line-height: 60px;
                 color: #00FFC2;
+                position: absolute;
+                top: 360px;
             }
             .circle_skill_wrap {
                 display: flex;
@@ -597,6 +600,7 @@ main {
     .contact {
         .box {
             padding-top: 140px;
+            flex-direction: column;
             .title {
                 font-weight: 300;
             }
