@@ -306,7 +306,7 @@ function App() {
                             size='large'
                             color='black'
                             height='922px'
-                            title={`<strong>능동적</strong>이고 <strong>즐거움을 추구</strong>하는 개발자\n<strong>원활한 커뮤니케이션 능력</strong>을 겸비한 인재 \n어쩌고저쩌고\n안녕하세요 반갑습니다!`}
+                            title={`<strong>능동적</strong>이고 <strong>즐거움을 추구</strong>\n<strong>원활한 커뮤니케이션 능력</strong>\n어쩌고저쩌고\n안녕하세요 반갑습니다!`}
                         >
                             <BoxContents 
                                 lt='CONTACT ME'
