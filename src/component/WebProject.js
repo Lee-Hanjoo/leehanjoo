@@ -15,10 +15,10 @@ export default function WebProject(props) {
                     <WebButton title="PC" link={webLink} /> : ''
                 }
                 {tabLink ? 
-                    <WebButton title="TAB" link={tabLink} /> : ''
+                    <WebButton title="TAB" link={tabLink} width={1023}/> : ''
                 }
                 {moLink ? 
-                    <WebButton title="MB" link={moLink} /> : ''
+                    <WebButton title="MB" link={moLink} width={720}/> : ''
                 }
             </div>
         </div>

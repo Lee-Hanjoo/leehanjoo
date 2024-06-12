@@ -152,7 +152,7 @@ function App() {
                             <WebProject 
                                 sub="Web renewal"
                                 title="HanaTour"
-                                desc="적응형 웹 사이트 리뉴얼"
+                                desc="하나투어 리뉴얼 프로젝트"
                                 webLink='http://leehanjoo.dothome.co.kr/'
                                 moLink='http://leehanjoo.dothome.co.kr/'
                             />
@@ -165,7 +165,7 @@ function App() {
                             <WebProject 
                                 sub="Web renewal"
                                 title="CBNUH"
-                                desc="반응형 웹 사이트 리뉴얼"
+                                desc="충북대학교병원 리뉴얼 프로젝트"
                                 webLink='http://leehanjoo2.dothome.co.kr/'
                                 tabLink='http://leehanjoo2.dothome.co.kr/'
                                 moLink='http://leehanjoo2.dothome.co.kr/'
@@ -277,7 +277,7 @@ function App() {
                         </Box>
                     </div>
                     <div className='introduce'>
-                        <Box size='large' color='black' height="1200px" title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH">
+                        <Box size='large' color='black' height="1200px" title="Let me introduce myself Let me introduce myself">
                             <p className='desc'>
                                 이름은 <strong>이한주</strong>이다. <em>1993</em>년 <em>05</em>월 <em>05</em>일에 태어났다.<br />
                                 <em>2020</em>년 <em>02</em>월 이젠 아카데미에서 <strong>웹 퍼블리셔</strong> 과정을 수료,<br />
