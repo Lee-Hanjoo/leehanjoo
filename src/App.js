@@ -154,7 +154,7 @@ function App() {
                                 title="HanaTour"
                                 desc="하나투어 리뉴얼 프로젝트"
                                 webLink='http://leehanjoo.dothome.co.kr/'
-                                moLink='http://leehanjoo.dothome.co.kr/'
+                                moLink='http://leehanjoo.dothome.co.kr/mo_index.html'
                             />
                         </Box>
                         <Box
