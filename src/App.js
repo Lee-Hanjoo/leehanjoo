@@ -8,6 +8,7 @@ import CircleText from './component/CircleText.js'
 import WebProject from './component/WebProject.js'
 import CircleSkillWrap from './component/CircleSkillWrap.js';
 import CircleSkill from './component/CircleSkill.js';
+import StarImg from './component/StarImg.js';
 import Popup from './component/Popup.js';
 import { useEffect, useRef, useState } from 'react';
 
@@ -25,9 +26,9 @@ function App() {
     },[popup])
 
     // visual > name - LHJ 이미지 랜덤 출력
-    const [randomL, setRandomL] = useState(1);
-    const [randomH, setRandomH] = useState(1);
-    const [randomJ, setRandomJ] = useState(1);
+    const [randomL, setRandomL] = useState(0);
+    const [randomH, setRandomH] = useState(0);
+    const [randomJ, setRandomJ] = useState(0);
     
     useEffect(()=>{
         setInterval(()=>{
@@ -39,14 +40,25 @@ function App() {
         setInterval(()=>{
             setRandomJ(Math.floor(Math.random() * 10));
         }, 1300)
-    },[], 2000)
+    },[], 1000)
 
-    // visual > lang - 언어 랜덤 출력
-    // let arr = ['Html5', 'Css3', 'jQuery', 'Javascript', 'React', 'React Navtive', 'Ajax', 'TypeScript', 'Zustand', 'gitHub', 'Figma', '']
-
-    // anchor smooth
-
-    // start on
+    // star color random
+    const [randomStar1, setRandomStar1] = useState(0);
+    const [randomStar2, setRandomStar2] = useState(1);
+    const [randomStar3, setRandomStar3] = useState(2);
+    
+    useEffect(()=>{
+        setInterval(()=>{
+            setRandomStar1(Math.floor(Math.random() * 12));
+        }, 2400)
+        setInterval(()=>{
+            setRandomStar2(Math.floor(Math.random() * 12));
+        }, 3300)
+        setInterval(()=>{
+            setRandomStar3(Math.floor(Math.random() * 12));
+        }, 2700)
+    },[], 2400)
+    const colors = ["#00FF00", "#FF008A", "#00FFFF", "#CCFF00", "#FF005C", "#FF9900", "#5200FF", "#CC00FF", "#FF0000", "#00FFC2", "#FFE600", "#0500FF"]
 
     // 680 아래로 리사이즈 비율
     useEffect(()=>{
@@ -72,19 +84,24 @@ function App() {
                     <h1 className="logo"><img src='/assets/logo.png' alt='hanjoo logo' /></h1>
                     <ul className="star">
                         <li>
-                            <img src="/assets/star.svg" alt="" />
+                            <StarImg color={colors[randomStar1]}/>
                         </li>
                         <li className="on">
-                            <img src="/assets/star.svg" alt="" />
+                            <StarImg color={colors[randomStar2]}/>
                         </li>
                         <li>
-                            <img src="/assets/star.svg" alt="" />
+                            <StarImg color={colors[randomStar3]}/>
                         </li>
                     </ul>
                     <ul className="txt lang">
                         <li>Html5 Css3</li>
                         <li>Javascript</li>
                         <li>React</li>
+                        {/* <li>Html5, Css3, Sass, jQuery, WebRTC</li>
+                        <li>Javascript, React, Ajax, Next.js</li>
+                        <li>React Navtive, TypeScript, Bootstrap</li>
+                        <li>Zustand, gitHub, Node.js, Figma</li>
+                        <li>Pug, WebSockets, SocketIO, Vercel, MySQL</li> */}
                     </ul>
                     <p className="txt portfolio">Lee Han joo Portfolio</p>
                     <p className="txt dev">Front-end.Dev</p>
