@@ -84,13 +84,16 @@ function App() {
                     <h1 className="logo"><img src='/assets/logo.png' alt='hanjoo logo' /></h1>
                     <ul className="star">
                         <li>
-                            <StarImg color={colors[randomStar1]}/>
+                            <StarImg color={colors[0]} />
+                            {/* <StarImg color={colors[randomStar1]}/> */}
                         </li>
                         <li className="on">
-                            <StarImg color={colors[randomStar2]}/>
+                            <StarImg color={colors[0]} />
+                            {/* <StarImg color={colors[randomStar2]}/> */}
                         </li>
                         <li>
-                            <StarImg color={colors[randomStar3]}/>
+                            <StarImg color={colors[0]} />
+                            {/* <StarImg color={colors[randomStar3]}/> */}
                         </li>
                     </ul>
                     <ul className="txt lang">
