@@ -40,7 +40,16 @@ function App() {
         setInterval(()=>{
             setRandomJ(Math.floor(Math.random() * 10));
         }, 1300)
-    },[], 1000)
+    },[])
+
+    // useEffect(()=>{
+    //     const timer  = setInterval(()=>{
+    //         setRandomL(Math.floor(Math.random() * 10));
+    //     }, 1000)
+    //     return () => {
+    //         clearInterval(timer)
+    //     }
+    // },[])
 
     // star color random
     const [randomStar1, setRandomStar1] = useState(0);
