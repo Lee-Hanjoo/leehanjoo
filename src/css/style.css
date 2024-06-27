@@ -3,7 +3,9 @@ html, body, #root {
     background-color: #000;
     color: #fff;
 }
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
 body {
     &.hold {
         overflow: hidden;
