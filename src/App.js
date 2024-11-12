@@ -31,33 +31,22 @@ function App() {
     const [randomJ, setRandomJ] = useState(0);
     
     useEffect(()=>{
-        setInterval(()=>{
+        const intervalL = setInterval(()=>{
             setRandomL(Math.floor(Math.random() * 10));
         }, 1000)
-        setInterval(()=>{
+        const intervalH = setInterval(()=>{
             setRandomH(Math.floor(Math.random() * 10));
         }, 1500)
-        setInterval(()=>{
+        const intervalJ = setInterval(()=>{
             setRandomJ(Math.floor(Math.random() * 10));
         }, 1300)
+        return () => {
+        clearInterval(intervalL);
+        clearInterval(intervalH);
+        clearInterval(intervalJ);
+        };
     },[], 1000)
-
-    // star color random
-    const [randomStar1, setRandomStar1] = useState(0);
-    const [randomStar2, setRandomStar2] = useState(1);
-    const [randomStar3, setRandomStar3] = useState(2);
     
-    useEffect(()=>{
-        setInterval(()=>{
-            setRandomStar1(Math.floor(Math.random() * 12));
-        }, 2400)
-        setInterval(()=>{
-            setRandomStar2(Math.floor(Math.random() * 12));
-        }, 3300)
-        setInterval(()=>{
-            setRandomStar3(Math.floor(Math.random() * 12));
-        }, 2700)
-    },[], 2400)
     const colors = ["#00FF00", "#FF008A", "#00FFFF", "#CCFF00", "#FF005C", "#FF9900", "#5200FF", "#CC00FF", "#FF0000", "#00FFC2", "#FFE600", "#0500FF"]
 
     // 680 아래로 리사이즈 비율
@@ -85,15 +74,12 @@ function App() {
                     <ul className="star">
                         <li>
                             <StarImg color={colors[0]} />
-                            {/* <StarImg color={colors[randomStar1]}/> */}
                         </li>
                         <li className="on">
                             <StarImg color={colors[0]} />
-                            {/* <StarImg color={colors[randomStar2]}/> */}
                         </li>
                         <li>
                             <StarImg color={colors[0]} />
-                            {/* <StarImg color={colors[randomStar3]}/> */}
                         </li>
                     </ul>
                     <ul className="txt lang">
@@ -109,9 +95,9 @@ function App() {
                     <p className="txt portfolio">Lee Han joo Portfolio</p>
                     <p className="txt dev">Front-end.Dev</p>
                     <ul className="txt name">
-                        <li><img src={`/assets/icon/L_` + randomL + `.png`} alt=''/></li>
-                        <li><img src={`/assets/icon/H_` + randomH + `.png`} alt=''/></li>
-                        <li><img src={`/assets/icon/J_` + randomJ + `.png`} alt=''/></li>
+                        <li><img src={`/assets/icon/L_` + randomL + `.png`} alt='L'/></li>
+                        <li><img src={`/assets/icon/H_` + randomH + `.png`} alt='H'/></li>
+                        <li><img src={`/assets/icon/J_` + randomJ + `.png`} alt='J'/></li>
                     </ul>
                 </div>
                 <div className="container">
@@ -120,12 +106,12 @@ function App() {
                             size='medium' 
                             color='pink' 
                             height="590px" 
-                            title="Hanatour CBNUH MyPortfolioSite Hanatour CBNUH"
+                            title="dAon CINEMA News Board PetFriend dAon CINEMA News Board PetFriend"
                             href='project'
                         >
                             <BoxContents
-                            lt='Publishing'
-                            lb="Personal Project"
+                            lt='Personal'
+                            lb="Project"
                             rtIcon="/assets/hanjoo.svg" />
                         </Box>
                         <Box 
@@ -135,7 +121,7 @@ function App() {
                             href='pub'
                         >
                             <BoxContents 
-                            lb="Work"
+                            lb="Publishing"
                             rbIcon="/assets/icon/work.svg"
                             />
                         </Box>
@@ -157,7 +143,7 @@ function App() {
                             size="large"
                             color='black' 
                             height="768px" 
-                            title={`개인 작업물입니다.\n<strong>설계</strong>, <strong>디자인</strong>, <strong>코딩</strong>까지\n<strong>기여도 100%</strong> 작업물입니다.\n뭐라고 적을까요`}
+                            title={`<strong>설계</strong>, <strong>디자인</strong>, <strong>개발</strong> 모두\n 직접 진행한 <strong>개인 프로젝트</strong>입니다.\n<strong style="display:inline-block;margin-top:20px">Js</strong>, <strong>React</strong>, <strong>오픈 API</strong>를\n활용하였습니다.`}
                         >
                             <BoxContents 
                                 lt="PERSONAL PROJECT"
@@ -170,11 +156,11 @@ function App() {
                             height="460px"
                         >
                             <WebProject 
-                                sub="Web renewal"
-                                title="HanaTour"
-                                desc="하나투어 리뉴얼 프로젝트"
-                                webLink='http://leehanjoo.dothome.co.kr/'
-                                moLink='http://leehanjoo.dothome.co.kr/mo_index.html'
+                                sub="Web Project"
+                                title="dAon"
+                                desc="다온펜션 리뉴얼"
+                                webLink='https://qodql.github.io/daon/index.html'
+                                moLink='https://qodql.github.io/daon/index.html'
                             />
                         </Box>
                         <Box
@@ -183,12 +169,11 @@ function App() {
                             height="460px"
                         >
                             <WebProject 
-                                sub="Web renewal"
-                                title="CBNUH"
-                                desc="충북대학교병원 리뉴얼 프로젝트"
-                                webLink='http://leehanjoo2.dothome.co.kr/'
-                                tabLink='http://leehanjoo2.dothome.co.kr/'
-                                moLink='http://leehanjoo2.dothome.co.kr/'
+                                sub="Web Project"
+                                title="CINEMA"
+                                desc="영화 소개 프로젝트"
+                                webLink='https://lee-hanjoo.github.io/GreenMovies/'
+                                moLink='https://lee-hanjoo.github.io/GreenMovies/'
                             />
                         </Box>
                         <Box
@@ -197,10 +182,34 @@ function App() {
                             height="460px"
                         >
                             <WebProject 
-                                sub="Portfolio"
-                                title="Portfolio"
-                                desc="개인 포트폴리오 사이트"
+                                sub="Web Project"
+                                title="News"
+                                desc="뉴스 프로젝트"
+                                tabLink='https://leehanjoo-news.vercel.app/'
+                            />
+                        </Box>
+                        <Box
+                            size="regular"
+                            color="black"
+                            height="460px"
+                        >
+                            <WebProject 
+                                sub="Web Project"
+                                title="Board"
+                                desc="게시판 프로젝트"
                                 webLink='http://leehanjoo3.dothome.co.kr/'
+                            />
+                        </Box>
+                        <Box
+                            size="regular"
+                            color="black"
+                            height="460px"
+                        >
+                            <WebProject 
+                                sub="APP Project"
+                                title="PetFriend"
+                                desc="React Native를 유기동물 앱"
+                                webLink=''
                             />
                         </Box>
                     </div>
