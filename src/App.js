@@ -110,8 +110,8 @@ function App() {
                             href='project'
                         >
                             <BoxContents
-                            lt='Personal'
-                            lb="Project"
+                            lt='Personal Project'
+                            lb="Front-end.Dev"
                             rtIcon="/assets/hanjoo.svg" />
                         </Box>
                         <Box 
@@ -121,13 +121,13 @@ function App() {
                             href='pub'
                         >
                             <BoxContents 
-                            lb="Publishing"
+                            lb="Publishing Work"
                             rbIcon="/assets/icon/work.svg"
                             />
                         </Box>
                         <Box size="small" color="black" height="290px" href="design">
                             <BoxContents 
-                            lb="Design"
+                            lb="Personal Work"
                             rbIcon="/assets/icon/design.svg"
                             />
                         </Box>
@@ -159,8 +159,8 @@ function App() {
                                 sub="Web Project"
                                 title="dAon"
                                 desc="다온펜션 리뉴얼"
-                                webLink='https://qodql.github.io/daon/index.html'
-                                moLink='https://qodql.github.io/daon/index.html'
+                                webLink='https://lee-hanjoo.github.io/GreenDaon/index.html'
+                                moLink='https://lee-hanjoo.github.io/GreenDaon/index.html'
                             />
                         </Box>
                         <Box
@@ -206,10 +206,10 @@ function App() {
                             height="460px"
                         >
                             <WebProject 
-                                sub="APP Project"
+                                sub="APP Project [진행중]"
                                 title="PetFriend"
-                                desc="React Native를 유기동물 앱"
-                                webLink=''
+                                desc="유기동물 앱"
+                                webLink='https://github.com/Lee-Hanjoo/petfriend'
                             />
                         </Box>
                     </div>
@@ -230,12 +230,12 @@ function App() {
                                     <a href="https://sokorea.or.kr/" title="SOK" target='_blank'>SOK</a>
                                     <a href="https://birkmankorea.co.kr/" title="Birkman" target='_blank'>Birkman</a>
                                     <a href="https://icomes.or.kr/" title="ICOMES2024" target='_blank'>ICOMES2024</a>
-                                    <a href="http://teamhubdnc.com/" title="팀 허브디앤씨" target='_blank'>팀 허브디앤씨</a>
+                                    <a href="https://hubteam.kr/" title="팀 허브디앤씨" target='_blank'>팀 허브디앤씨</a>
                                     <a href="https://www.mirapartners.im/" title="미라 파트너스" target='_blank'>미라 파트너스</a>
                                     <a href="http://www.salesmac.com/employee/login" title="새날 CRM" target='_blank'>새날 CRM</a>
                                     <a href="https://cedulearn.com/" title="쎄듀런" target='_blank'>쎄듀런</a>
                                     <a href="https://labex.kr/goods/goods_list.php" title="Labex" target='_blank'>Labex</a>
-                                    <a href="" title="바디채널">바디채널 관리자</a>
+                                    <a href="https://www.bodychannel.co.kr/" title="바디채널">바디채널 관리자</a>
                                 </div>
                         </Box>
                     </div>
@@ -343,7 +343,7 @@ function App() {
                             <ul className='info'>
                                 <li><a href='mailto:gkswnehcl@gmail.com' target='_blank'>gkswnehcl@gmail.com</a></li>
                                 <li><a href='tel:010-5530-9355' target='_blank'>010 5530 9355</a></li>
-                                <li><a href='https://www.melon.com/artist/song.htm?artistId=859237' target='_blank'>@Sensitive People</a></li>
+                                <li><a href='https://vibe.naver.com/search?query=%EC%98%88%EB%AF%BC%ED%95%9C%EC%95%A0%EB%93%A4' target='_blank'>@Sensitive People</a></li>
                             </ul>
                             <CircleText>Sensitive People</CircleText>
                         </Box>

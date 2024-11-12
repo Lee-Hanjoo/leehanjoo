@@ -199,10 +199,7 @@ main {
             width: calc(100% - (50% + 4px));
         }
         &.regular {
-            width: calc(100% / 3);
-            &:nth-child(2) {
-                width: calc(100% / 3 - 16px);
-            }
+            width: calc((100% / 3) - 8px);
         }
         &.medium {
             width: calc(100% - (50% + 4px));
