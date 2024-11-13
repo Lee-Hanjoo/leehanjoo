@@ -308,11 +308,10 @@ function App() {
                         <Box size='large' color='black' height="1200px" title="Let me introduce myself Let me introduce myself">
                             <p className='desc'>
                                 이름은 <strong>이한주</strong>이다. <em>1993</em>년 <em>05</em>월 <em>05</em>일에 태어났다.<br />
-                                <em>2020</em>년 <em>02</em>월 이젠 아카데미에서 <strong>웹 퍼블리셔</strong> 과정을 수료,<br />
-                                <em>2023</em>년 <em>02</em>월 메가 스터디에서 <strong>웹 퍼블리셔</strong> 과정을 수료,<br />
-                                <em>2024</em>년 <em>11</em>월 그린 컴퓨터 아카데미에서 <strong>프론트 엔드</strong> 과정을 수료하였다.<br />
-                                <strong>웹 디자이너로 <em>2</em>년</strong>간, <strong>웹 퍼블리셔로 <em>1</em>년</strong>간 근무 하였으며,<br />
-                                <strong><em>4</em>개의 음반 발매</strong> 이력이 있다.
+                                취미와 특기는 <strong>음악</strong>이고, 시중에
+                                <strong><em> 3</em>개</strong>의 <a href='https://vibe.naver.com/search?query=%EC%98%88%EB%AF%BC%ED%95%9C%EC%95%A0%EB%93%A4' target='_blank' style={{font:'inherit', textDecoration: 'underline'}}><strong>음반 발매</strong></a> 이력이 있다.<br />
+                                또 다른 취미로는 게임하기를 좋아한다.<br />
+                                리그오브레전드 <strong>서포터</strong> 포지션으로 최고티어는 <strong>다이아</strong>.<br />주로 주말에는 <strong>배구</strong> 동호회에 나가며<br />열심히 체력을 기르고 있다.
                             </p>
                             <CircleSkillWrap>
                                 <CircleSkill skill='html5' />
