@@ -86,11 +86,6 @@ function App() {
                         <li>Html5 Css3</li>
                         <li>Javascript</li>
                         <li>React</li>
-                        {/* <li>Html5, Css3, Sass, jQuery, WebRTC</li>
-                        <li>Javascript, React, Ajax, Next.js</li>
-                        <li>React Navtive, TypeScript, Bootstrap</li>
-                        <li>Zustand, gitHub, Node.js, Figma</li>
-                        <li>Pug, WebSockets, SocketIO, Vercel, MySQL</li> */}
                     </ul>
                     <p className="txt portfolio">Lee Han joo Portfolio</p>
                     <p className="txt dev">Front-end.Dev</p>
@@ -142,8 +137,7 @@ function App() {
                         <Box 
                             size="large"
                             color='black' 
-                            height="768px" 
-                            title={`<strong>설계</strong>, <strong>디자인</strong>, <strong>개발</strong> 모두\n 직접 진행한 <strong>개인 프로젝트</strong>입니다.\n<strong style="display:inline-block;margin-top:20px">Js</strong>, <strong>React</strong>, <strong>오픈 API</strong>를\n활용하였습니다.`}
+                            title={`<strong>설계</strong>, <strong>디자인</strong>, <strong>개발</strong>까지\n기여도 <strong>100%</strong>의\n<strong>개인 프로젝트</strong>입니다.`}
                         >
                             <BoxContents 
                                 lt="PERSONAL PROJECT"
@@ -156,9 +150,10 @@ function App() {
                             height="460px"
                         >
                             <WebProject 
-                                sub="Web Project"
+                                sub="Web Renewal Project"
                                 title="dAon"
-                                desc="다온펜션 리뉴얼"
+                                desc={`팀장으로서 프로젝트를 총괄하며,\n메인, 예약하기를 작업하였습니다.`}
+                                info="Vanilla JS, swiper, storage, Cookies"
                                 webLink='https://lee-hanjoo.github.io/GreenDaon/index.html'
                                 moLink='https://lee-hanjoo.github.io/GreenDaon/index.html'
                             />
@@ -171,7 +166,8 @@ function App() {
                             <WebProject 
                                 sub="Web Project"
                                 title="CINEMA"
-                                desc="영화 소개 프로젝트"
+                                desc={`영화 소개 프로젝트입니다.\n오픈 API를 활용하였습니다.`}
+                                info="React, axios, Zustand, swiper"
                                 webLink='https://lee-hanjoo.github.io/GreenMovies/'
                                 moLink='https://lee-hanjoo.github.io/GreenMovies/'
                             />
@@ -184,7 +180,8 @@ function App() {
                             <WebProject 
                                 sub="Web Project"
                                 title="News"
-                                desc="뉴스 프로젝트"
+                                desc={`뉴스 프로젝트입니다.\n오픈 API를 활용하였습니다.`}
+                                info="Vue, express, axios, swiper"
                                 tabLink='https://leehanjoo-news.vercel.app/'
                             />
                         </Box>
@@ -196,7 +193,8 @@ function App() {
                             <WebProject 
                                 sub="Web Project"
                                 title="Board"
-                                desc="게시판 프로젝트"
+                                desc={`게시판 프로젝트입니다.\n풀스택 웹 페이지입니다.`}
+                                info={`Next, MongoDB, Ajax, Auth, JWT, AWS`}
                                 webLink='http://leehanjoo3.dothome.co.kr/'
                             />
                         </Box>
@@ -206,9 +204,10 @@ function App() {
                             height="460px"
                         >
                             <WebProject 
-                                sub="APP Project [진행중]"
+                                sub="APP Project [진행중...]"
                                 title="PetFriend"
-                                desc="유기동물 앱"
+                                desc={`유기동물 프로젝트입니다.\n풀스택 어플리케이션입니다.`}
+                                info={`React Native, Firebase, axios, Zustand`}
                                 webLink='https://github.com/Lee-Hanjoo/petfriend'
                             />
                         </Box>

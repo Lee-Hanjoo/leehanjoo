@@ -267,7 +267,7 @@ main {
         }
         .title {
             display: inline;
-            font-size: 110px;
+            font-size: 80px;
             z-index: 10;
         }
         .box_contents {
@@ -347,12 +347,12 @@ main {
         flex-wrap: wrap;
         gap: 8px;
         .box {
-            padding: 140px 70px 70px;
+            padding: 140px 70px 80px;
             &.regular {
-                padding: 80px;
+                padding: 70px;
                 &:hover {
                     background-color: #CCFF00;
-                    .sub, .title, .desc, .lang, .web_btn {
+                    .sub, .title, .desc, .lang, .info, .web_btn {
                         color: #000;
                     }
                     .web_btn {
@@ -374,39 +374,42 @@ main {
             font-weight: 200;
         }
         .web_project {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             .txt {
-                .sub, .title, .desc, .web_btn {
+                .sub, .title, .desc, .web_btn, .info {
+                    display: block;
                     transition: all 0.3s;
+                    color:#CCFF00;
                 }
                 .sub {
-                    display: block;
-                    font-size: 24px;
+                    font-size: 20px;
                     font-weight: 500;
-                    color:#CCFF00;
                     margin-bottom: 10px;
                 }
                 .title {
-                    display: block;
-                    font-size: 80px;
+                    font-size: 64px;
                     font-weight: 500;
                     margin-bottom: 24px;
-                    color:#CCFF00
                 }
                 .desc {
-                    display: block;
-                    font-size: 24px;
-                    color: #CCFF00;
-                    margin-bottom: 64px;
+                    margin-bottom: 12px;
+                }
+                .desc, .info {
+                    font-size: 20px;
+                    line-height: 1.5;
                 }
             }
             .btn_wrap {
                 display: flex;
-                gap: 20px;
+                gap: 12px;
                 flex-wrap: wrap;
                 .web_btn {
                     display: flex;
-                    padding: 16px 30px;
-                    font-size: 20px;
+                    padding: 12px 26px;
+                    font-size: 16px;
                     font-weight: 500;
                     color: #CCFF00;
                     border: 2px solid #CCFF00;
@@ -416,10 +419,10 @@ main {
                     &::after {
                         content: '';
                         display: block;
-                        width: 16px;
-                        height: 16px;
-                        margin: 3px 0 0 8px;
-                        background: url('../../public/assets/icon/link_arrow.svg') no-repeat center;
+                        width: 12px;
+                        height: 12px;
+                        margin: 2px 0 0 8px;
+                        background: url('../../public/assets/icon/link_arrow.svg') no-repeat center / 12px;
                         transition: all 0.3s;
                     }
                 }
