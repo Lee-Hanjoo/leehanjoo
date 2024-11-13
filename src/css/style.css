@@ -637,14 +637,20 @@ main {
                     a {
                         width: 100%;
                         height: 100%;
-                        display: block;
-                        padding: 20px 40px;
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+                        padding: 16px 36px;
                         border: 1px solid #FFE600;
                         border-radius: 999px;
                         font-size: 24px;
                         transition: background-color 0.1s;
                         &:hover {
                             background-color: rgba(255, 230, 0, 0.2);
+                        }
+                        img {
+                            width: 32px;
+                            height: 32px;
                         }
                     }
                 }

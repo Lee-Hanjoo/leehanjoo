@@ -328,13 +328,12 @@
                     right: -110px;
                     top: 350px;
                     &:nth-of-type(2) {
-                        right: -100px;
                         top: 488px;
                     }
                     .circle_skill {
                         width: 160px;
                         height: 160px;
-                        padding: 64px;
+                        padding: 48px;
                     }
                 }
             }
@@ -347,23 +346,11 @@
         .introduce {
             .box {
                 height: 758px !important;
-                .title {
-                    font-size: 100px;
-                }
-                .desc {
-                    top: 212px;
-                }
                 .circle_skill_wrap {
                     right: -120px;
                     top: 470px;
                     &:nth-of-type(2) {
-                        right: -100px;
                         top: 618px;
-                    }
-                    .circle_skill {
-                        width: 160px;
-                        height: 160px;
-                        padding: 64px;
                     }
                 }
             }
@@ -371,6 +358,9 @@
     }
 }
 @media screen and (max-width:768px) {
+    .tab_only {
+        display: none;
+    }
     .visual {
         .txt {
             &.lang {

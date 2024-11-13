@@ -134,9 +134,9 @@ function App() {
                             rbIcon="/assets/icon/work.svg"
                             />
                         </Box>
-                        <Box size="small" color="black" height="290px" href="design">
+                        <Box size="small" color="black" height="290px" href="introduce">
                             <BoxContents 
-                            lb="Personal Work"
+                            lb="About LEE"
                             rbIcon="/assets/icon/design.svg"
                             />
                         </Box>
@@ -252,7 +252,7 @@ function App() {
                                 </div>
                         </Box>
                     </div>
-                    <div className='design' id="design">
+                    <div className='design'>
                         <Box
                             size='medium'
                             color='sky'
@@ -318,26 +318,26 @@ function App() {
                             <img className="logo_img" src='/assets/icon/byheydey.svg' alt="LOTTE logo"/>
                         </Box>
                     </div>
-                    <div className='introduce'>
+                    <div className='introduce' id="introduce">
                         <Box size='large' color='black' height="1200px" title="Let me introduce myself Let me introduce myself">
                             <p className='desc'>
                                 이름은 <strong>이한주</strong>이다. <em>1993</em>년 <em>05</em>월 <em>05</em>일에 태어났다.<br />
                                 취미와 특기는 <strong>음악</strong>이고, 시중에
                                 <strong><em> 3</em>개</strong>의 <a href='https://vibe.naver.com/search?query=%EC%98%88%EB%AF%BC%ED%95%9C%EC%95%A0%EB%93%A4' target='_blank' style={{font:'inherit', textDecoration: 'underline'}}><strong>음반 발매</strong></a> 이력이 있다.<br />
-                                또 다른 취미로는 <strong>게임</strong>하기를 좋아한다.<br /><strong>뜨개질</strong>, <strong>독서</strong>에도 흥미를 가지고 있으며, 주말에는 주로<br /><strong>배구</strong> 동호회에 나가며 열심히 체력을 기르고 있다.<br />조카 바보, 귀여운 동물들을 좋아한다.
+                                또 다른 취미로는 <strong>게임</strong>하기를 좋아한다.<br /><strong>뜨개질</strong>, <strong>독서</strong>에도 흥미를 가지고 있으며, 주말에는 주로<br /><strong>배구</strong> 동호회에 나가며 열심히 체력을 기르고 있다.<br /><strong>조카 바보</strong>, <strong>귀여운 동물</strong>들을 좋아한다.
                             </p>
                             <CircleSkillWrap>
-                                <CircleSkill skill='html5' />
-                                <CircleSkill skill='css3' />
-                                <CircleSkill skill='js' />
-                                <CircleSkill skill='leehanjoo' />
-                                <CircleSkill skill='react' />
+                                <CircleSkill skill='album_3.jpg' />
+                                <CircleSkill skill='knitting.png' />
+                                <CircleSkill skill='album_2.jpg' />
+                                <CircleSkill skill='leehanjoo.png' />
+                                <CircleSkill skill='volleyball.png' />
                             </CircleSkillWrap>
                             <CircleSkillWrap>
-                                <CircleSkill skill='Ajax' />
-                                <CircleSkill skill='sensitive_people' />
-                                <CircleSkill skill='ts' />
-                                <CircleSkill skill='jquery' />
+                                <CircleSkill skill='book.png' />
+                                <CircleSkill skill='book.png' />
+                                <CircleSkill skill='dog_cat.png' />
+                                <CircleSkill skill='album_1.jpg' />
                             </CircleSkillWrap>
                         </Box>
                     </div>
@@ -345,16 +345,29 @@ function App() {
                         <Box 
                             size='large'
                             color='black'
-                            height='922px'
-                            title={`<strong>능동적</strong>이고 <strong>즐거움을 추구</strong>\n<strong>원활한 커뮤니케이션 능력</strong>\n어쩌고저쩌고\n안녕하세요 반갑습니다!`}
+                            height='708px'
+                            title={`<strong>능동적</strong>으로 <br class='tab_only' /><strong>창의적인 문제 해결</strong>을 즐기며, <br class='tab_only' /><strong>지속적으로 기술을 탐구</strong>하는 <br class='tab_only' /><strong>밝은 성격</strong>의 개발자입니다.`}
                         >
                             <BoxContents 
                                 lt='CONTACT ME'
                             />
                             <ul className='info'>
-                                <li><a href='mailto:gkswnehcl@gmail.com' target='_blank'>gkswnehcl@gmail.com</a></li>
-                                <li><a href='tel:010-5530-9355' target='_blank'>010 5530 9355</a></li>
-                                <li><a href='https://vibe.naver.com/search?query=%EC%98%88%EB%AF%BC%ED%95%9C%EC%95%A0%EB%93%A4' target='_blank'>@Sensitive People</a></li>
+                                <li>
+                                    <a href='mailto:gkswnehcl@gmail.com' target='_blank'>
+                                        gkswnehcl@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='tel:010-5530-9355' target='_blank'>
+                                        010 5530 9355
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/assets/download/[프론트엔드]_이한주_이력서.pdf' download>
+                                        <img src='/assets/icon/download_file.svg' alt=''/>
+                                        Resume
+                                    </a>
+                                </li>
                             </ul>
                             <CircleText>Sensitive People</CircleText>
                         </Box>

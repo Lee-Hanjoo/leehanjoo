@@ -1,6 +1,6 @@
 export default function CircleSkill(props) {
-    const { skill } = props
+    const { skill, jpg } = props
       return (
-        <li className="circle_skill"><img src={`/assets/icon/${skill}.svg`} alt={skill} /></li>
+        <li className="circle_skill"><img src={`/assets/icon/${skill}`} alt={skill} /></li>
       );
     }
