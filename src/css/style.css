@@ -614,6 +614,7 @@ main {
             flex-direction: column;
             .title {
                 font-weight: 300;
+                line-height: 1.2;
             }
             .lt > p, .title, .info li > a {
                 color: #FFE600;

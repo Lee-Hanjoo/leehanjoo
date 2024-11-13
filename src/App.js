@@ -345,7 +345,7 @@ function App() {
                         <Box 
                             size='large'
                             color='black'
-                            height='708px'
+                            height='740px'
                             title={`<strong>능동적</strong>으로 <br class='tab_only' /><strong>창의적인 문제 해결</strong>을 즐기며, <br class='tab_only' /><strong>지속적으로 기술을 탐구</strong>하는 <br class='tab_only' /><strong>밝은 성격</strong>의 개발자입니다.`}
                         >
                             <BoxContents 

@@ -66,11 +66,6 @@
                 }
             }
         }
-        .contact {
-            .box {
-                height: 680px !important;
-            }
-        }
     }
 }
 @media screen and (max-width:1240px) {
@@ -253,7 +248,7 @@
         /* section6 - contact */
         .contact {
             .box {
-                height: 510px !important;
+                height: 520px !important;
                 padding-top: 100px;
                 .title {
                     font-size: 48px;
