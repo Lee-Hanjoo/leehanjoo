@@ -51,14 +51,16 @@ function App() {
 
     // 680 아래로 리사이즈 비율
     useEffect(()=>{
+        const width = window.innerWidth;
         const resize = () => {
-            var minWidth = 680;
-            var body = document.getElementsByTagName('body')[0];
-            if (window.innerWidth < minWidth) { body.style.zoom = (window.innerWidth / minWidth); }
+            let minWidth = 680;
+            let body = document.getElementsByTagName('body')[0];
+            if (width < minWidth) { body.style.zoom = (width / minWidth); }
             else body.style.zoom = 1;
         }
         window.addEventListener('resize', resize);
-    },[])
+    },[])    
+
     return (
         <>
             <main>
@@ -87,7 +89,7 @@ function App() {
                         <li>React Vue Next TS</li>
                         <li>Axios Zustand</li>
                     </ul>
-                    <p className="txt portfolio">Lee Han joo Portfolio</p>
+                    <p className="txt portfolio">Portfolio</p>
                     <p className="txt dev">Front-end.Dev</p>
                     <ul className="txt name">
                         <li><img src={`/assets/icon/L_` + randomL + `.png`} alt='L'/></li>

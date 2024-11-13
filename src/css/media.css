@@ -371,6 +371,18 @@
     }
 }
 @media screen and (max-width:768px) {
+    .visual {
+        .txt {
+            &.lang {
+                > li {
+                    font-size: 40px;
+                }
+            }
+            &.dev {
+                font-size: 40px;
+            }
+        }
+    }
     .container {
         .box {
             .box_contents {
