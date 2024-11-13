@@ -83,9 +83,9 @@ function App() {
                         </li>
                     </ul>
                     <ul className="txt lang">
-                        <li>Html5 Css3</li>
-                        <li>Javascript</li>
-                        <li>React</li>
+                        <li>Vanilla JS</li>
+                        <li>React Vue Next TS</li>
+                        <li>Axios Zustand</li>
                     </ul>
                     <p className="txt portfolio">Lee Han joo Portfolio</p>
                     <p className="txt dev">Front-end.Dev</p>
@@ -310,8 +310,7 @@ function App() {
                                 이름은 <strong>이한주</strong>이다. <em>1993</em>년 <em>05</em>월 <em>05</em>일에 태어났다.<br />
                                 취미와 특기는 <strong>음악</strong>이고, 시중에
                                 <strong><em> 3</em>개</strong>의 <a href='https://vibe.naver.com/search?query=%EC%98%88%EB%AF%BC%ED%95%9C%EC%95%A0%EB%93%A4' target='_blank' style={{font:'inherit', textDecoration: 'underline'}}><strong>음반 발매</strong></a> 이력이 있다.<br />
-                                또 다른 취미로는 게임하기를 좋아한다.<br />
-                                리그오브레전드 <strong>서포터</strong> 포지션으로 최고티어는 <strong>다이아</strong>.<br />주로 주말에는 <strong>배구</strong> 동호회에 나가며<br />열심히 체력을 기르고 있다.
+                                또 다른 취미로는 <strong>게임</strong>하기를 좋아한다.<br /><strong>뜨개질</strong>, <strong>독서</strong>에도 흥미를 가지고 있으며, 주말에는 주로<br /><strong>배구</strong> 동호회에 나가며 열심히 체력을 기르고 있다.<br />조카 바보, 귀여운 동물들을 좋아한다.
                             </p>
                             <CircleSkillWrap>
                                 <CircleSkill skill='html5' />
