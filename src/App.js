@@ -209,7 +209,7 @@ function App() {
                                 title="Board"
                                 desc={`게시판 프로젝트입니다.\n풀스택 웹 페이지입니다.`}
                                 info={`Next, MongoDB, Ajax, Auth, JWT, AWS`}
-                                webLink='http://leehanjoo3.dothome.co.kr/'
+                                webLink='http://leehanjooboard.ap-northeast-2.elasticbeanstalk.com/'
                             />
                         </Box>
                         <Box
