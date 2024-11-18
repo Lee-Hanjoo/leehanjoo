@@ -47,8 +47,6 @@ function App() {
         };
     },[], 1000)
     
-    const colors = ["#00FF00", "#FF008A", "#00FFFF", "#CCFF00", "#FF005C", "#FF9900", "#5200FF", "#CC00FF", "#FF0000", "#00FFC2", "#FFE600", "#0500FF"]
-
     // 680 아래로 리사이즈 비율
     useEffect(() => {
         const resize = () => {
@@ -87,13 +85,13 @@ function App() {
                     <h1 className="logo"><img src='/assets/logo.png' alt='hanjoo logo' /></h1>
                     <ul className="star">
                         <li>
-                            <StarImg color={colors[0]} />
+                            <StarImg color={'#00FF00'} />
                         </li>
                         <li className="on">
-                            <StarImg color={colors[0]} />
+                            <StarImg color={'#00FF00'} />
                         </li>
                         <li>
-                            <StarImg color={colors[0]} />
+                            <StarImg color={'#00FF00'} />
                         </li>
                     </ul>
                     <ul className="txt lang">
@@ -164,10 +162,10 @@ function App() {
                             height="460px"
                         >
                             <WebProject 
-                                sub="Web Renewal Project"
+                                sub="Web Project"
                                 title="dAon"
                                 desc={`팀장으로서 프로젝트를 총괄하며,\n메인, 예약하기를 작업하였습니다.`}
-                                info="Vanilla JS, swiper, storage, Cookies"
+                                info="Vanilla JS, Swiper, Storage, Cookies"
                                 webLink='https://lee-hanjoo.github.io/GreenDaon/index.html'
                                 moLink='https://lee-hanjoo.github.io/GreenDaon/index.html'
                             />
@@ -181,7 +179,7 @@ function App() {
                                 sub="Web Project"
                                 title="CINEMA"
                                 desc={`영화 소개 프로젝트입니다.\n오픈 API를 활용하였습니다.`}
-                                info="React, axios, Zustand, swiper"
+                                info="React, Axios, Zustand, Swiper"
                                 webLink='https://lee-hanjoo.github.io/GreenMovies/'
                                 moLink='https://lee-hanjoo.github.io/GreenMovies/'
                             />
@@ -195,7 +193,7 @@ function App() {
                                 sub="Web Project"
                                 title="News"
                                 desc={`뉴스 프로젝트입니다.\n오픈 API를 활용하였습니다.`}
-                                info="Vue, express, axios, swiper"
+                                info="Vue, Express, Axios, Swiper"
                                 tabLink='https://leehanjoo-news.vercel.app/'
                             />
                         </Box>
@@ -205,7 +203,7 @@ function App() {
                             height="460px"
                         >
                             <WebProject 
-                                sub="Web Project"
+                                sub="Web Project [진행중...]"
                                 title="Board"
                                 desc={`게시판 프로젝트입니다.\n풀스택 웹 페이지입니다.`}
                                 info={`Next, MongoDB, Ajax, Auth, JWT, AWS`}
@@ -221,7 +219,7 @@ function App() {
                                 sub="APP Project [진행중...]"
                                 title="PetFriend"
                                 desc={`유기동물 프로젝트입니다.\n풀스택 어플리케이션입니다.`}
-                                info={`React Native, Firebase, axios, Zustand`}
+                                info={`React Native, Firebase, Axios, Zustand`}
                                 webLink='https://github.com/Lee-Hanjoo/petfriend'
                             />
                         </Box>
