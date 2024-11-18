@@ -9,18 +9,18 @@
 <br />
 
 ## 개인 프로젝트 (리뉴얼)
--프론트
-[다온](https://lee-hanjoo.github.io/GreenDaon/index.html)
-[CINEMA](https://lee-hanjoo.github.io/GreenMovies/)
-[News](https://leehanjoo-news.vercel.app/)
-[Board](http://leehanjooboard.ap-northeast-2.elasticbeanstalk.com/)
-[PetFriend](https://github.com/Lee-Hanjoo/petfriend)
+-프론트<br />
+[다온](https://lee-hanjoo.github.io/GreenDaon/index.html)<br />
+[CINEMA](https://lee-hanjoo.github.io/GreenMovies/)<br />
+[News](https://leehanjoo-news.vercel.app/)<br />
+[Board](http://leehanjooboard.ap-northeast-2.elasticbeanstalk.com/)<br />
+[PetFriend](https://github.com/Lee-Hanjoo/petfriend)<br />
 
--퍼블리싱
+-퍼블리싱<br />
 [하나투어](http://leehanjoo.dothome.co.kr/)<br />
 [하나투어 적응형 모바일](http://leehanjoo.dothome.co.kr/mo_index.html)<br />
 [충북대학교병원](http://leehanjoo2.dothome.co.kr/)<br />
-[2019 개인 포트폴리오](http://leehanjoo3.dothome.co.kr/)
+[2019 개인 포트폴리오](http://leehanjoo3.dothome.co.kr/)<br />
 
 ## 실무 프로젝트 (구축)
 [Birkman](https://birkmankorea.co.kr/)<br />
