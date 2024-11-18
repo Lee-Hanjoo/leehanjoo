@@ -8,7 +8,7 @@
 
 <br />
 
-## 개인 프로젝트 (리뉴얼)
+## 프로젝트
 -프론트<br />
 [다온](https://lee-hanjoo.github.io/GreenDaon/index.html)<br />
 [CINEMA](https://lee-hanjoo.github.io/GreenMovies/)<br />
