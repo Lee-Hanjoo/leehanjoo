@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /public/assets/download/*.pdf
+*.pdf
 
 # testing
 /coverage
