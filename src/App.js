@@ -363,6 +363,12 @@ function App() {
                                 <li>
                                     <a href='/assets/download/[프론트엔드]_이한주_포트폴리오_PPT.pdf' download>
                                         <img src='/assets/icon/download_file.svg' alt=''/>
+                                        Portfolio PPT
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/assets/download/[프론트엔드]_이한주_이력서.pdf' download>
+                                        <img src='/assets/icon/download_file.svg' alt=''/>
                                         Resume
                                     </a>
                                 </li>
