@@ -356,7 +356,7 @@ function App() {
                             <ul className='info'>
                                 <li>
                                     <a href='mailto:gkswnehcl@gmail.com' target='_blank'>
-                                        gkswnehcl@gmail
+                                        gkswnehcl@gmail.com
                                     </a>
                                 </li>
                                 <li>

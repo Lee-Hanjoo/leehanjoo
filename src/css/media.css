@@ -356,6 +356,13 @@
                 }
             }
         }
+        .contact {
+            .box {
+                .circle_text {
+                    display: none;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width:768px) {
@@ -415,8 +422,17 @@
         }
         .contact {
             .box {
-                .circle_text {
-                    display: none;
+                .info {
+                    & li {
+                        a {
+                            padding: 12px 16px;
+                            font-size: 14px;
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
                 }
             }
         }
