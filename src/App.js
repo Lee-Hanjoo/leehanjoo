@@ -14,7 +14,7 @@ import { useEffect, useRef, useState } from 'react';
 
 function App() {
     const [popup, setPopup] = useState(0)
-    
+
     // 팝업
     useEffect(()=>{
         const body = document.querySelector('body')
@@ -128,7 +128,7 @@ function App() {
                             href='pub'
                         >
                             <BoxContents 
-                            lb="Publishing Work"
+                            lb={`Publishing <br class="pc_only"/>Work`}
                             rbIcon="/assets/icon/work.svg"
                             />
                         </Box>
@@ -250,70 +250,74 @@ function App() {
                                 </div>
                         </Box>
                     </div>
-                    <div className='design'>
+                    <div className='techStack'>
                         <Box
                             size='medium'
                             color='sky'
                             height='385px'
-                            onClick={()=>{
-                                setPopup(1)
-                            }}
                         >
                             <BoxContents 
                                 lt='01.'
-                                lb='HANSSEM'
-                                rt='Design'
+                                lb='Tech Stack'
+                                rt='Front'
                                 rbIcon="/assets/icon/link_arrow_white.svg"
                             />
-                            <img className="logo_img" src='/assets/icon/hanssem.svg' alt="hanssem logo"/>
+                            <p className='skills'>
+                                HTML, CSS, SASS, JQuery,
+                                <br />
+                                Vanilla JS, Typescript
+                                <br/>
+                                React, React Native, Vue, Next
+                            </p>
                         </Box>
                         <Box
                             size='medium'
                             color='brown'
                             height='385px'
-                            onClick={()=>{
-                                setPopup(2)
-                            }}
                         >
                             <BoxContents 
                                 lt='02.'
-                                lb='LOTTE'
-                                rt='Design'
+                                lb='Tech Stack'
+                                rt='Back'
                                 rbIcon="/assets/icon/link_arrow_white.svg"
                             />
-                            <img className="logo_img" src='/assets/icon/lotte.svg' alt="LOTTE logo"/>
+                            <p className='skills'>
+                                Express, MongoDB
+                            </p>
                         </Box>
                         <Box
                             size='medium'
                             color='deep_green'
                             height='385px'
-                            onClick={()=>{
-                                setPopup(3)
-                            }}
                         >
                             <BoxContents 
                                 lt='03.'
-                                lb='ROHSEOUL'
-                                rt='Design'
+                                lb='Tech Stack'
+                                rt='Async/Library'
                                 rbIcon="/assets/icon/link_arrow_white.svg"
                             />
-                            <img className="logo_img" src='/assets/icon/roh.svg' alt="ROHSEOUL logo"/>
+                            <p className='skills'>
+                                Ajax, Axios, Swiper,
+                                <br />
+                                Datepicker, Tui
+                            </p>
                         </Box>
                         <Box
                             size='medium'
                             color='purple'
                             height='385px'
-                            onClick={()=>{
-                                setPopup(4)
-                            }}
                         >
                             <BoxContents 
                                 lt='04.'
-                                lb='BYHEYDEY'
-                                rt='Design'
+                                lb='Tech Stack'
+                                rt='Deploy/Cloud/State'
                                 rbIcon="/assets/icon/link_arrow_white.svg"
                             />
-                            <img className="logo_img" src='/assets/icon/byheydey.svg' alt="LOTTE logo"/>
+                            <p className='skills'>
+                                AWS, Vercel, Firebase,
+                                <br />
+                                Github, Zustand
+                            </p>
                         </Box>
                     </div>
                     <div className='introduce' id="introduce">
@@ -352,18 +356,24 @@ function App() {
                             <ul className='info'>
                                 <li>
                                     <a href='mailto:gkswnehcl@gmail.com' target='_blank'>
-                                        gkswnehcl@gmail.com
+                                        gkswnehcl@gmail
                                     </a>
                                 </li>
                                 <li>
                                     <a href='tel:010-5530-9355' target='_blank'>
-                                        010 5530 9355
+                                        01055309355
                                     </a>
                                 </li>
                                 <li>
                                     <a href='/assets/download/[프론트엔드]_이한주_이력서.pdf' download>
                                         <img src='/assets/icon/download_file.svg' alt=''/>
                                         Resume
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='/assets/download/[프론트엔드]_이한주_포트폴리오_PPT.pdf' download>
+                                        <img src='/assets/icon/download_file.svg' alt=''/>
+                                        PPT
                                     </a>
                                 </li>
                             </ul>

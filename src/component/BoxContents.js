@@ -1,5 +1,6 @@
 export default function BoxContents(props) {
     const {size, children, lt, rt, lb, rb, rtIcon, rbIcon} = props
+    const data = lb;
       return (
         <div className={`box_contents`}>
           { lt && 
@@ -11,7 +12,9 @@ export default function BoxContents(props) {
             </div>
           }
           { lb &&
-          <div className={`lb`}><p>{lb}</p></div>
+          <div className={`lb`}>
+            <p dangerouslySetInnerHTML={{__html: data}}></p>
+          </div>
           }
           { (rb || rbIcon) &&
             <div className={`rb`}>
