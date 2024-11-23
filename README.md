@@ -38,10 +38,7 @@
 <br />
 
 ## 스킬
-HTML, CSS, SASS, JQuery, Vanilla JS, React, React Native, Vue, Next, Typescript
-Express, MongoDB
-Ajax, Axios, Swiper, Datepicker, Tui
-AWS, Vercel, Firebase, Github, Zustand
+HTML, CSS, SASS, JQuery, Vanilla JS, React, React Native, Vue, Next, Typescript, Express, MongoDB, Ajax, Axios, Swiper, Datepicker, Tui, AWS, Vercel, Firebase, Github, Zustand
 
 ## 툴
 VSCode, EditPlus, Spring, Figma, XD, Photoshop
