@@ -224,7 +224,7 @@ function App() {
                                 webLink='https://board-ruddy-nu.vercel.app/'
                             />
                         </Box>
-                        <Box
+                        {/* <Box 
                             size="regular"
                             color="black"
                             height="460px"
@@ -237,6 +237,7 @@ function App() {
                                 webLink='https://github.com/Lee-Hanjoo/petfriend'
                             />
                         </Box>
+                        */}
                     </div>
                     <div className='pub' id="pub">
                         <Box
